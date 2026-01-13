@@ -1,0 +1,822 @@
+[
+  {
+    "eventId": "401809243",
+    "date": "2025-10-21T23:30Z",
+    "name": "Houston Rockets at Oklahoma City Thunder",
+    "shortName": "HOU @ OKC",
+    "opponent": "Oklahoma City Thunder",
+    "opponentAbbr": "OKC",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401809947",
+    "date": "2025-10-25T00:00Z",
+    "name": "Detroit Pistons at Houston Rockets",
+    "shortName": "DET @ HOU",
+    "opponent": "Detroit Pistons",
+    "opponentAbbr": "DET",
+    "home": true,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401809971",
+    "date": "2025-10-28T00:00Z",
+    "name": "Brooklyn Nets at Houston Rockets",
+    "shortName": "BKN @ HOU",
+    "opponent": "Brooklyn Nets",
+    "opponentAbbr": "BKN",
+    "home": true,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401809986",
+    "date": "2025-10-29T22:30Z",
+    "name": "Houston Rockets at Toronto Raptors",
+    "shortName": "HOU @ TOR",
+    "opponent": "Toronto Raptors",
+    "opponentAbbr": "TOR",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401810001",
+    "date": "2025-11-02T00:00Z",
+    "name": "Houston Rockets at Boston Celtics",
+    "shortName": "HOU @ BOS",
+    "opponent": "Boston Celtics",
+    "opponentAbbr": "BOS",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401810015",
+    "date": "2025-11-04T01:00Z",
+    "name": "Dallas Mavericks at Houston Rockets",
+    "shortName": "DAL @ HOU",
+    "opponent": "Dallas Mavericks",
+    "opponentAbbr": "DAL",
+    "home": true,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401810031",
+    "date": "2025-11-06T01:00Z",
+    "name": "Houston Rockets at Memphis Grizzlies",
+    "shortName": "HOU @ MEM",
+    "opponent": "Memphis Grizzlies",
+    "opponentAbbr": "MEM",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401809774",
+    "date": "2025-11-08T00:30Z",
+    "name": "Houston Rockets at San Antonio Spurs",
+    "shortName": "HOU @ SA",
+    "opponent": "San Antonio Spurs",
+    "opponentAbbr": "SA",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401810046",
+    "date": "2025-11-09T20:30Z",
+    "name": "Houston Rockets at Milwaukee Bucks",
+    "shortName": "HOU @ MIL",
+    "opponent": "Milwaukee Bucks",
+    "opponentAbbr": "MIL",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401810073",
+    "date": "2025-11-13T01:00Z",
+    "name": "Washington Wizards at Houston Rockets",
+    "shortName": "WSH @ HOU",
+    "opponent": "Washington Wizards",
+    "opponentAbbr": "WSH",
+    "home": true,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401809784",
+    "date": "2025-11-15T01:00Z",
+    "name": "Portland Trail Blazers at Houston Rockets",
+    "shortName": "POR @ HOU",
+    "opponent": "Portland Trail Blazers",
+    "opponentAbbr": "POR",
+    "home": true,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401810091",
+    "date": "2025-11-17T00:00Z",
+    "name": "Orlando Magic at Houston Rockets",
+    "shortName": "ORL @ HOU",
+    "opponent": "Orlando Magic",
+    "opponentAbbr": "ORL",
+    "home": true,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401810110",
+    "date": "2025-11-20T00:00Z",
+    "name": "Houston Rockets at Cleveland Cavaliers",
+    "shortName": "HOU @ CLE",
+    "opponent": "Cleveland Cavaliers",
+    "opponentAbbr": "CLE",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401809796",
+    "date": "2025-11-22T02:30Z",
+    "name": "Denver Nuggets at Houston Rockets",
+    "shortName": "DEN @ HOU",
+    "opponent": "Denver Nuggets",
+    "opponentAbbr": "DEN",
+    "home": true,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401810145",
+    "date": "2025-11-25T02:30Z",
+    "name": "Houston Rockets at Phoenix Suns",
+    "shortName": "HOU @ PHX",
+    "opponent": "Phoenix Suns",
+    "opponentAbbr": "PHX",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401809808",
+    "date": "2025-11-27T03:00Z",
+    "name": "Houston Rockets at Golden State Warriors",
+    "shortName": "HOU @ GS",
+    "opponent": "Golden State Warriors",
+    "opponentAbbr": "GS",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401810156",
+    "date": "2025-11-30T20:00Z",
+    "name": "Houston Rockets at Utah Jazz",
+    "shortName": "HOU @ UTAH",
+    "opponent": "Utah Jazz",
+    "opponentAbbr": "UTAH",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401810171",
+    "date": "2025-12-02T02:00Z",
+    "name": "Houston Rockets at Utah Jazz",
+    "shortName": "HOU @ UTAH",
+    "opponent": "Utah Jazz",
+    "opponentAbbr": "UTAH",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401810185",
+    "date": "2025-12-04T01:00Z",
+    "name": "Sacramento Kings at Houston Rockets",
+    "shortName": "SAC @ HOU",
+    "opponent": "Sacramento Kings",
+    "opponentAbbr": "SAC",
+    "home": true,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401810201",
+    "date": "2025-12-06T01:00Z",
+    "name": "Phoenix Suns at Houston Rockets",
+    "shortName": "PHX @ HOU",
+    "opponent": "Phoenix Suns",
+    "opponentAbbr": "PHX",
+    "home": true,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401810211",
+    "date": "2025-12-07T01:30Z",
+    "name": "Houston Rockets at Dallas Mavericks",
+    "shortName": "HOU @ DAL",
+    "opponent": "Dallas Mavericks",
+    "opponentAbbr": "DAL",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401836746",
+    "date": "2025-12-12T01:00Z",
+    "name": "LA Clippers at Houston Rockets",
+    "shortName": "LAC @ HOU",
+    "opponent": "LA Clippers",
+    "opponentAbbr": "LAC",
+    "home": true,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401836806",
+    "date": "2025-12-16T02:30Z",
+    "name": "Houston Rockets at Denver Nuggets",
+    "shortName": "HOU @ DEN",
+    "opponent": "Denver Nuggets",
+    "opponentAbbr": "DEN",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401810230",
+    "date": "2025-12-19T01:00Z",
+    "name": "Houston Rockets at New Orleans Pelicans",
+    "shortName": "HOU @ NO",
+    "opponent": "New Orleans Pelicans",
+    "opponentAbbr": "NO",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401810241",
+    "date": "2025-12-20T22:00Z",
+    "name": "Houston Rockets at Denver Nuggets",
+    "shortName": "HOU @ DEN",
+    "opponent": "Denver Nuggets",
+    "opponentAbbr": "DEN",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401810256",
+    "date": "2025-12-22T03:00Z",
+    "name": "Houston Rockets at Sacramento Kings",
+    "shortName": "HOU @ SAC",
+    "opponent": "Sacramento Kings",
+    "opponentAbbr": "SAC",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401810277",
+    "date": "2025-12-24T03:30Z",
+    "name": "Houston Rockets at LA Clippers",
+    "shortName": "HOU @ LAC",
+    "opponent": "LA Clippers",
+    "opponentAbbr": "LAC",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401809241",
+    "date": "2025-12-26T01:00Z",
+    "name": "Houston Rockets at Los Angeles Lakers",
+    "shortName": "HOU @ LAL",
+    "opponent": "Los Angeles Lakers",
+    "opponentAbbr": "LAL",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401810293",
+    "date": "2025-12-28T01:00Z",
+    "name": "Cleveland Cavaliers at Houston Rockets",
+    "shortName": "CLE @ HOU",
+    "opponent": "Cleveland Cavaliers",
+    "opponentAbbr": "CLE",
+    "home": true,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401810308",
+    "date": "2025-12-30T01:00Z",
+    "name": "Indiana Pacers at Houston Rockets",
+    "shortName": "IND @ HOU",
+    "opponent": "Indiana Pacers",
+    "opponentAbbr": "IND",
+    "home": true,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401810326",
+    "date": "2026-01-01T23:00Z",
+    "name": "Houston Rockets at Brooklyn Nets",
+    "shortName": "HOU @ BKN",
+    "opponent": "Brooklyn Nets",
+    "opponentAbbr": "BKN",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401810346",
+    "date": "2026-01-04T01:30Z",
+    "name": "Houston Rockets at Dallas Mavericks",
+    "shortName": "HOU @ DAL",
+    "opponent": "Dallas Mavericks",
+    "opponentAbbr": "DAL",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401810360",
+    "date": "2026-01-06T01:00Z",
+    "name": "Phoenix Suns at Houston Rockets",
+    "shortName": "PHX @ HOU",
+    "opponent": "Phoenix Suns",
+    "opponentAbbr": "PHX",
+    "home": true,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401810382",
+    "date": "2026-01-08T03:00Z",
+    "name": "Houston Rockets at Portland Trail Blazers",
+    "shortName": "HOU @ POR",
+    "opponent": "Portland Trail Blazers",
+    "opponentAbbr": "POR",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401810395",
+    "date": "2026-01-10T03:00Z",
+    "name": "Houston Rockets at Portland Trail Blazers",
+    "shortName": "HOU @ POR",
+    "opponent": "Portland Trail Blazers",
+    "opponentAbbr": "POR",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401810412",
+    "date": "2026-01-12T02:00Z",
+    "name": "Houston Rockets at Sacramento Kings",
+    "shortName": "HOU @ SAC",
+    "opponent": "Sacramento Kings",
+    "opponentAbbr": "SAC",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401810420",
+    "date": "2026-01-14T01:00Z",
+    "name": "Chicago Bulls at Houston Rockets",
+    "shortName": "CHI @ HOU",
+    "opponent": "Chicago Bulls",
+    "opponentAbbr": "CHI",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401810436",
+    "date": "2026-01-16T00:30Z",
+    "name": "Oklahoma City Thunder at Houston Rockets",
+    "shortName": "OKC @ HOU",
+    "opponent": "Oklahoma City Thunder",
+    "opponentAbbr": "OKC",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401810446",
+    "date": "2026-01-17T02:30Z",
+    "name": "Minnesota Timberwolves at Houston Rockets",
+    "shortName": "MIN @ HOU",
+    "opponent": "Minnesota Timberwolves",
+    "opponentAbbr": "MIN",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401810459",
+    "date": "2026-01-19T00:00Z",
+    "name": "New Orleans Pelicans at Houston Rockets",
+    "shortName": "NO @ HOU",
+    "opponent": "New Orleans Pelicans",
+    "opponentAbbr": "NO",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401810470",
+    "date": "2026-01-21T01:00Z",
+    "name": "San Antonio Spurs at Houston Rockets",
+    "shortName": "SA @ HOU",
+    "opponent": "San Antonio Spurs",
+    "opponentAbbr": "SA",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401810483",
+    "date": "2026-01-23T00:00Z",
+    "name": "Houston Rockets at Philadelphia 76ers",
+    "shortName": "HOU @ PHI",
+    "opponent": "Philadelphia 76ers",
+    "opponentAbbr": "PHI",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401810490",
+    "date": "2026-01-24T00:00Z",
+    "name": "Houston Rockets at Detroit Pistons",
+    "shortName": "HOU @ DET",
+    "opponent": "Detroit Pistons",
+    "opponentAbbr": "DET",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401810517",
+    "date": "2026-01-27T01:00Z",
+    "name": "Memphis Grizzlies at Houston Rockets",
+    "shortName": "MEM @ HOU",
+    "opponent": "Memphis Grizzlies",
+    "opponentAbbr": "MEM",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401810534",
+    "date": "2026-01-29T02:30Z",
+    "name": "San Antonio Spurs at Houston Rockets",
+    "shortName": "SA @ HOU",
+    "opponent": "San Antonio Spurs",
+    "opponentAbbr": "SA",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401810537",
+    "date": "2026-01-30T01:00Z",
+    "name": "Houston Rockets at Atlanta Hawks",
+    "shortName": "HOU @ ATL",
+    "opponent": "Atlanta Hawks",
+    "opponentAbbr": "ATL",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401810556",
+    "date": "2026-02-01T01:30Z",
+    "name": "Dallas Mavericks at Houston Rockets",
+    "shortName": "DAL @ HOU",
+    "opponent": "Dallas Mavericks",
+    "opponentAbbr": "DAL",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401810568",
+    "date": "2026-02-03T00:00Z",
+    "name": "Houston Rockets at Indiana Pacers",
+    "shortName": "HOU @ IND",
+    "opponent": "Indiana Pacers",
+    "opponentAbbr": "IND",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401810583",
+    "date": "2026-02-05T01:00Z",
+    "name": "Boston Celtics at Houston Rockets",
+    "shortName": "BOS @ HOU",
+    "opponent": "Boston Celtics",
+    "opponentAbbr": "BOS",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401810592",
+    "date": "2026-02-06T01:00Z",
+    "name": "Charlotte Hornets at Houston Rockets",
+    "shortName": "CHA @ HOU",
+    "opponent": "Charlotte Hornets",
+    "opponentAbbr": "CHA",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401810603",
+    "date": "2026-02-07T20:30Z",
+    "name": "Houston Rockets at Oklahoma City Thunder",
+    "shortName": "HOU @ OKC",
+    "opponent": "Oklahoma City Thunder",
+    "opponentAbbr": "OKC",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401810627",
+    "date": "2026-02-11T01:00Z",
+    "name": "LA Clippers at Houston Rockets",
+    "shortName": "LAC @ HOU",
+    "opponent": "LA Clippers",
+    "opponentAbbr": "LAC",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401810637",
+    "date": "2026-02-12T01:00Z",
+    "name": "LA Clippers at Houston Rockets",
+    "shortName": "LAC @ HOU",
+    "opponent": "LA Clippers",
+    "opponentAbbr": "LAC",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401810647",
+    "date": "2026-02-20T00:00Z",
+    "name": "Houston Rockets at Charlotte Hornets",
+    "shortName": "HOU @ CHA",
+    "opponent": "Charlotte Hornets",
+    "opponentAbbr": "CHA",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401810671",
+    "date": "2026-02-22T01:30Z",
+    "name": "Houston Rockets at New York Knicks",
+    "shortName": "HOU @ NY",
+    "opponent": "New York Knicks",
+    "opponentAbbr": "NY",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401810685",
+    "date": "2026-02-24T02:30Z",
+    "name": "Utah Jazz at Houston Rockets",
+    "shortName": "UTAH @ HOU",
+    "opponent": "Utah Jazz",
+    "opponentAbbr": "UTAH",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401810700",
+    "date": "2026-02-26T01:00Z",
+    "name": "Sacramento Kings at Houston Rockets",
+    "shortName": "SAC @ HOU",
+    "opponent": "Sacramento Kings",
+    "opponentAbbr": "SAC",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401810707",
+    "date": "2026-02-27T00:30Z",
+    "name": "Houston Rockets at Orlando Magic",
+    "shortName": "HOU @ ORL",
+    "opponent": "Orlando Magic",
+    "opponentAbbr": "ORL",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401810719",
+    "date": "2026-02-28T20:00Z",
+    "name": "Houston Rockets at Miami Heat",
+    "shortName": "HOU @ MIA",
+    "opponent": "Miami Heat",
+    "opponentAbbr": "MIA",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401810734",
+    "date": "2026-03-03T00:00Z",
+    "name": "Houston Rockets at Washington Wizards",
+    "shortName": "HOU @ WSH",
+    "opponent": "Washington Wizards",
+    "opponentAbbr": "WSH",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401810757",
+    "date": "2026-03-06T00:30Z",
+    "name": "Golden State Warriors at Houston Rockets",
+    "shortName": "GS @ HOU",
+    "opponent": "Golden State Warriors",
+    "opponentAbbr": "GS",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401810765",
+    "date": "2026-03-07T01:00Z",
+    "name": "Portland Trail Blazers at Houston Rockets",
+    "shortName": "POR @ HOU",
+    "opponent": "Portland Trail Blazers",
+    "opponentAbbr": "POR",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401810782",
+    "date": "2026-03-09T00:00Z",
+    "name": "Houston Rockets at San Antonio Spurs",
+    "shortName": "HOU @ SA",
+    "opponent": "San Antonio Spurs",
+    "opponentAbbr": "SA",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401810795",
+    "date": "2026-03-11T00:00Z",
+    "name": "Toronto Raptors at Houston Rockets",
+    "shortName": "TOR @ HOU",
+    "opponent": "Toronto Raptors",
+    "opponentAbbr": "TOR",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401810805",
+    "date": "2026-03-12T02:00Z",
+    "name": "Houston Rockets at Denver Nuggets",
+    "shortName": "HOU @ DEN",
+    "opponent": "Denver Nuggets",
+    "opponentAbbr": "DEN",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401810819",
+    "date": "2026-03-14T00:00Z",
+    "name": "New Orleans Pelicans at Houston Rockets",
+    "shortName": "NO @ HOU",
+    "opponent": "New Orleans Pelicans",
+    "opponentAbbr": "NO",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401810844",
+    "date": "2026-03-17T01:00Z",
+    "name": "Los Angeles Lakers at Houston Rockets",
+    "shortName": "LAL @ HOU",
+    "opponent": "Los Angeles Lakers",
+    "opponentAbbr": "LAL",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401810862",
+    "date": "2026-03-19T01:30Z",
+    "name": "Los Angeles Lakers at Houston Rockets",
+    "shortName": "LAL @ HOU",
+    "opponent": "Los Angeles Lakers",
+    "opponentAbbr": "LAL",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401810873",
+    "date": "2026-03-21T00:00Z",
+    "name": "Atlanta Hawks at Houston Rockets",
+    "shortName": "ATL @ HOU",
+    "opponent": "Atlanta Hawks",
+    "opponentAbbr": "ATL",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401810882",
+    "date": "2026-03-22T00:00Z",
+    "name": "Miami Heat at Houston Rockets",
+    "shortName": "MIA @ HOU",
+    "opponent": "Miami Heat",
+    "opponentAbbr": "MIA",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401810897",
+    "date": "2026-03-24T00:00Z",
+    "name": "Houston Rockets at Chicago Bulls",
+    "shortName": "HOU @ CHI",
+    "opponent": "Chicago Bulls",
+    "opponentAbbr": "CHI",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401810913",
+    "date": "2026-03-26T01:30Z",
+    "name": "Houston Rockets at Minnesota Timberwolves",
+    "shortName": "HOU @ MIN",
+    "opponent": "Minnesota Timberwolves",
+    "opponentAbbr": "MIN",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401810924",
+    "date": "2026-03-28T00:00Z",
+    "name": "Houston Rockets at Memphis Grizzlies",
+    "shortName": "HOU @ MEM",
+    "opponent": "Memphis Grizzlies",
+    "opponentAbbr": "MEM",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401810943",
+    "date": "2026-03-29T23:00Z",
+    "name": "Houston Rockets at New Orleans Pelicans",
+    "shortName": "HOU @ NO",
+    "opponent": "New Orleans Pelicans",
+    "opponentAbbr": "NO",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401810957",
+    "date": "2026-04-01T00:00Z",
+    "name": "New York Knicks at Houston Rockets",
+    "shortName": "NY @ HOU",
+    "opponent": "New York Knicks",
+    "opponentAbbr": "NY",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401810965",
+    "date": "2026-04-02T00:00Z",
+    "name": "Milwaukee Bucks at Houston Rockets",
+    "shortName": "MIL @ HOU",
+    "opponent": "Milwaukee Bucks",
+    "opponentAbbr": "MIL",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401810979",
+    "date": "2026-04-04T00:00Z",
+    "name": "Utah Jazz at Houston Rockets",
+    "shortName": "UTAH @ HOU",
+    "opponent": "Utah Jazz",
+    "opponentAbbr": "UTAH",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401810997",
+    "date": "2026-04-06T02:00Z",
+    "name": "Houston Rockets at Golden State Warriors",
+    "shortName": "HOU @ GS",
+    "opponent": "Golden State Warriors",
+    "opponentAbbr": "GS",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401811012",
+    "date": "2026-04-08T03:00Z",
+    "name": "Houston Rockets at Phoenix Suns",
+    "shortName": "HOU @ PHX",
+    "opponent": "Phoenix Suns",
+    "opponentAbbr": "PHX",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401811024",
+    "date": "2026-04-10T00:00Z",
+    "name": "Philadelphia 76ers at Houston Rockets",
+    "shortName": "PHI @ HOU",
+    "opponent": "Philadelphia 76ers",
+    "opponentAbbr": "PHI",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401811033",
+    "date": "2026-04-11T00:00Z",
+    "name": "Minnesota Timberwolves at Houston Rockets",
+    "shortName": "MIN @ HOU",
+    "opponent": "Minnesota Timberwolves",
+    "opponentAbbr": "MIN",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401811049",
+    "date": "2026-04-13T00:30Z",
+    "name": "Memphis Grizzlies at Houston Rockets",
+    "shortName": "MEM @ HOU",
+    "opponent": "Memphis Grizzlies",
+    "opponentAbbr": "MEM",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  }
+]

@@ -1,0 +1,822 @@
+[
+  {
+    "eventId": "401802365",
+    "date": "2025-10-09T23:30Z",
+    "name": "New Jersey Devils at Carolina Hurricanes",
+    "shortName": "NJ @ CAR",
+    "opponent": "Carolina Hurricanes",
+    "opponentAbbr": "CAR",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401802377",
+    "date": "2025-10-11T23:00Z",
+    "name": "New Jersey Devils at Tampa Bay Lightning",
+    "shortName": "NJ @ TB",
+    "opponent": "Tampa Bay Lightning",
+    "opponentAbbr": "TB",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401802396",
+    "date": "2025-10-13T23:00Z",
+    "name": "New Jersey Devils at Columbus Blue Jackets",
+    "shortName": "NJ @ CBJ",
+    "opponent": "Columbus Blue Jackets",
+    "opponentAbbr": "CBJ",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401802415",
+    "date": "2025-10-16T23:00Z",
+    "name": "Florida Panthers at New Jersey Devils",
+    "shortName": "FLA @ NJ",
+    "opponent": "Florida Panthers",
+    "opponentAbbr": "FLA",
+    "home": true,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401802429",
+    "date": "2025-10-18T19:30Z",
+    "name": "Edmonton Oilers at New Jersey Devils",
+    "shortName": "EDM @ NJ",
+    "opponent": "Edmonton Oilers",
+    "opponentAbbr": "EDM",
+    "home": true,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401802449",
+    "date": "2025-10-21T23:00Z",
+    "name": "New Jersey Devils at Toronto Maple Leafs",
+    "shortName": "NJ @ TOR",
+    "opponent": "Toronto Maple Leafs",
+    "opponentAbbr": "TOR",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401802459",
+    "date": "2025-10-22T23:00Z",
+    "name": "Minnesota Wild at New Jersey Devils",
+    "shortName": "MIN @ NJ",
+    "opponent": "Minnesota Wild",
+    "opponentAbbr": "MIN",
+    "home": true,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401802475",
+    "date": "2025-10-24T23:00Z",
+    "name": "San Jose Sharks at New Jersey Devils",
+    "shortName": "SJ @ NJ",
+    "opponent": "San Jose Sharks",
+    "opponentAbbr": "SJ",
+    "home": true,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401802491",
+    "date": "2025-10-26T17:00Z",
+    "name": "Colorado Avalanche at New Jersey Devils",
+    "shortName": "COL @ NJ",
+    "opponent": "Colorado Avalanche",
+    "opponentAbbr": "COL",
+    "home": true,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401802512",
+    "date": "2025-10-29T01:00Z",
+    "name": "New Jersey Devils at Colorado Avalanche",
+    "shortName": "NJ @ COL",
+    "opponent": "Colorado Avalanche",
+    "opponentAbbr": "COL",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401802527",
+    "date": "2025-10-31T02:00Z",
+    "name": "New Jersey Devils at San Jose Sharks",
+    "shortName": "NJ @ SJ",
+    "opponent": "San Jose Sharks",
+    "opponentAbbr": "SJ",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401802542",
+    "date": "2025-11-02T01:00Z",
+    "name": "New Jersey Devils at Los Angeles Kings",
+    "shortName": "NJ @ LA",
+    "opponent": "Los Angeles Kings",
+    "opponentAbbr": "LA",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401802548",
+    "date": "2025-11-03T01:00Z",
+    "name": "New Jersey Devils at Anaheim Ducks",
+    "shortName": "NJ @ ANA",
+    "opponent": "Anaheim Ducks",
+    "opponentAbbr": "ANA",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401802571",
+    "date": "2025-11-07T00:00Z",
+    "name": "Montreal Canadiens at New Jersey Devils",
+    "shortName": "MTL @ NJ",
+    "opponent": "Montreal Canadiens",
+    "opponentAbbr": "MTL",
+    "home": true,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401802582",
+    "date": "2025-11-08T17:30Z",
+    "name": "Pittsburgh Penguins at New Jersey Devils",
+    "shortName": "PIT @ NJ",
+    "opponent": "Pittsburgh Penguins",
+    "opponentAbbr": "PIT",
+    "home": true,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401802603",
+    "date": "2025-11-11T00:00Z",
+    "name": "New York Islanders at New Jersey Devils",
+    "shortName": "NYI @ NJ",
+    "opponent": "New York Islanders",
+    "opponentAbbr": "NYI",
+    "home": true,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401802619",
+    "date": "2025-11-13T02:30Z",
+    "name": "New Jersey Devils at Chicago Blackhawks",
+    "shortName": "NJ @ CHI",
+    "opponent": "Chicago Blackhawks",
+    "opponentAbbr": "CHI",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401802639",
+    "date": "2025-11-16T00:00Z",
+    "name": "New Jersey Devils at Washington Capitals",
+    "shortName": "NJ @ WSH",
+    "opponent": "Washington Capitals",
+    "opponentAbbr": "WSH",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401802660",
+    "date": "2025-11-19T00:00Z",
+    "name": "New Jersey Devils at Tampa Bay Lightning",
+    "shortName": "NJ @ TB",
+    "opponent": "Tampa Bay Lightning",
+    "opponentAbbr": "TB",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401802674",
+    "date": "2025-11-21T00:00Z",
+    "name": "New Jersey Devils at Florida Panthers",
+    "shortName": "NJ @ FLA",
+    "opponent": "Florida Panthers",
+    "opponentAbbr": "FLA",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401802690",
+    "date": "2025-11-23T00:00Z",
+    "name": "New Jersey Devils at Philadelphia Flyers",
+    "shortName": "NJ @ PHI",
+    "opponent": "Philadelphia Flyers",
+    "opponentAbbr": "PHI",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401802705",
+    "date": "2025-11-25T00:00Z",
+    "name": "Detroit Red Wings at New Jersey Devils",
+    "shortName": "DET @ NJ",
+    "opponent": "Detroit Red Wings",
+    "opponentAbbr": "DET",
+    "home": true,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401802715",
+    "date": "2025-11-27T00:00Z",
+    "name": "St. Louis Blues at New Jersey Devils",
+    "shortName": "STL @ NJ",
+    "opponent": "St. Louis Blues",
+    "opponentAbbr": "STL",
+    "home": true,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401802730",
+    "date": "2025-11-28T21:00Z",
+    "name": "New Jersey Devils at Buffalo Sabres",
+    "shortName": "NJ @ BUF",
+    "opponent": "Buffalo Sabres",
+    "opponentAbbr": "BUF",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401802746",
+    "date": "2025-11-30T00:00Z",
+    "name": "Philadelphia Flyers at New Jersey Devils",
+    "shortName": "PHI @ NJ",
+    "opponent": "Philadelphia Flyers",
+    "opponentAbbr": "PHI",
+    "home": true,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401802757",
+    "date": "2025-12-02T00:00Z",
+    "name": "Columbus Blue Jackets at New Jersey Devils",
+    "shortName": "CBJ @ NJ",
+    "opponent": "Columbus Blue Jackets",
+    "opponentAbbr": "CBJ",
+    "home": true,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401802772",
+    "date": "2025-12-04T00:00Z",
+    "name": "Dallas Stars at New Jersey Devils",
+    "shortName": "DAL @ NJ",
+    "opponent": "Dallas Stars",
+    "opponentAbbr": "DAL",
+    "home": true,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401802787",
+    "date": "2025-12-06T00:00Z",
+    "name": "Vegas Golden Knights at New Jersey Devils",
+    "shortName": "VGK @ NJ",
+    "opponent": "Vegas Golden Knights",
+    "opponentAbbr": "VGK",
+    "home": true,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401802794",
+    "date": "2025-12-07T00:00Z",
+    "name": "New Jersey Devils at Boston Bruins",
+    "shortName": "NJ @ BOS",
+    "opponent": "Boston Bruins",
+    "opponentAbbr": "BOS",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401802818",
+    "date": "2025-12-10T00:00Z",
+    "name": "New Jersey Devils at Ottawa Senators",
+    "shortName": "NJ @ OTT",
+    "opponent": "Ottawa Senators",
+    "opponentAbbr": "OTT",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401802832",
+    "date": "2025-12-12T00:00Z",
+    "name": "Tampa Bay Lightning at New Jersey Devils",
+    "shortName": "TB @ NJ",
+    "opponent": "Tampa Bay Lightning",
+    "opponentAbbr": "TB",
+    "home": true,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401802846",
+    "date": "2025-12-13T17:30Z",
+    "name": "Anaheim Ducks at New Jersey Devils",
+    "shortName": "ANA @ NJ",
+    "opponent": "Anaheim Ducks",
+    "opponentAbbr": "ANA",
+    "home": true,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401802859",
+    "date": "2025-12-14T17:30Z",
+    "name": "Vancouver Canucks at New Jersey Devils",
+    "shortName": "VAN @ NJ",
+    "opponent": "Vancouver Canucks",
+    "opponentAbbr": "VAN",
+    "home": true,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401802884",
+    "date": "2025-12-18T03:00Z",
+    "name": "New Jersey Devils at Vegas Golden Knights",
+    "shortName": "NJ @ VGK",
+    "opponent": "Vegas Golden Knights",
+    "opponentAbbr": "VGK",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401802898",
+    "date": "2025-12-20T02:00Z",
+    "name": "New Jersey Devils at Utah Mammoth",
+    "shortName": "NJ @ UTA",
+    "opponent": "Utah Mammoth",
+    "opponentAbbr": "UTA",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401802916",
+    "date": "2025-12-22T00:00Z",
+    "name": "Buffalo Sabres at New Jersey Devils",
+    "shortName": "BUF @ NJ",
+    "opponent": "Buffalo Sabres",
+    "opponentAbbr": "BUF",
+    "home": true,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401802931",
+    "date": "2025-12-24T00:00Z",
+    "name": "New Jersey Devils at New York Islanders",
+    "shortName": "NJ @ NYI",
+    "opponent": "New York Islanders",
+    "opponentAbbr": "NYI",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401802943",
+    "date": "2025-12-28T00:00Z",
+    "name": "Washington Capitals at New Jersey Devils",
+    "shortName": "WSH @ NJ",
+    "opponent": "Washington Capitals",
+    "opponentAbbr": "WSH",
+    "home": true,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401802968",
+    "date": "2025-12-31T00:00Z",
+    "name": "New Jersey Devils at Toronto Maple Leafs",
+    "shortName": "NJ @ TOR",
+    "opponent": "Toronto Maple Leafs",
+    "opponentAbbr": "TOR",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401802978",
+    "date": "2026-01-01T00:00Z",
+    "name": "New Jersey Devils at Columbus Blue Jackets",
+    "shortName": "NJ @ CBJ",
+    "opponent": "Columbus Blue Jackets",
+    "opponentAbbr": "CBJ",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401802996",
+    "date": "2026-01-03T20:00Z",
+    "name": "Utah Mammoth at New Jersey Devils",
+    "shortName": "UTA @ NJ",
+    "opponent": "Utah Mammoth",
+    "opponentAbbr": "UTA",
+    "home": true,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401803011",
+    "date": "2026-01-05T00:00Z",
+    "name": "Carolina Hurricanes at New Jersey Devils",
+    "shortName": "CAR @ NJ",
+    "opponent": "Carolina Hurricanes",
+    "opponentAbbr": "CAR",
+    "home": true,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401803020",
+    "date": "2026-01-07T00:30Z",
+    "name": "New Jersey Devils at New York Islanders",
+    "shortName": "NJ @ NYI",
+    "opponent": "New York Islanders",
+    "opponentAbbr": "NYI",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401803038",
+    "date": "2026-01-09T00:00Z",
+    "name": "New Jersey Devils at Pittsburgh Penguins",
+    "shortName": "NJ @ PIT",
+    "opponent": "Pittsburgh Penguins",
+    "opponentAbbr": "PIT",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401803062",
+    "date": "2026-01-11T19:00Z",
+    "name": "New Jersey Devils at Winnipeg Jets",
+    "shortName": "NJ @ WPG",
+    "opponent": "Winnipeg Jets",
+    "opponentAbbr": "WPG",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401803072",
+    "date": "2026-01-13T01:00Z",
+    "name": "New Jersey Devils at Minnesota Wild",
+    "shortName": "NJ @ MIN",
+    "opponent": "Minnesota Wild",
+    "opponentAbbr": "MIN",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401803086",
+    "date": "2026-01-15T00:00Z",
+    "name": "Seattle Kraken at New Jersey Devils",
+    "shortName": "SEA @ NJ",
+    "opponent": "Seattle Kraken",
+    "opponentAbbr": "SEA",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401803110",
+    "date": "2026-01-18T00:00Z",
+    "name": "Carolina Hurricanes at New Jersey Devils",
+    "shortName": "CAR @ NJ",
+    "opponent": "Carolina Hurricanes",
+    "opponentAbbr": "CAR",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401803128",
+    "date": "2026-01-20T02:00Z",
+    "name": "New Jersey Devils at Calgary Flames",
+    "shortName": "NJ @ CGY",
+    "opponent": "Calgary Flames",
+    "opponentAbbr": "CGY",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401803137",
+    "date": "2026-01-21T03:00Z",
+    "name": "New Jersey Devils at Edmonton Oilers",
+    "shortName": "NJ @ EDM",
+    "opponent": "Edmonton Oilers",
+    "opponentAbbr": "EDM",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401803158",
+    "date": "2026-01-24T03:00Z",
+    "name": "New Jersey Devils at Vancouver Canucks",
+    "shortName": "NJ @ VAN",
+    "opponent": "Vancouver Canucks",
+    "opponentAbbr": "VAN",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401803171",
+    "date": "2026-01-25T21:00Z",
+    "name": "New Jersey Devils at Seattle Kraken",
+    "shortName": "NJ @ SEA",
+    "opponent": "Seattle Kraken",
+    "opponentAbbr": "SEA",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401803186",
+    "date": "2026-01-28T00:00Z",
+    "name": "Winnipeg Jets at New Jersey Devils",
+    "shortName": "WPG @ NJ",
+    "opponent": "Winnipeg Jets",
+    "opponentAbbr": "WPG",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401803199",
+    "date": "2026-01-30T00:00Z",
+    "name": "Nashville Predators at New Jersey Devils",
+    "shortName": "NSH @ NJ",
+    "opponent": "Nashville Predators",
+    "opponentAbbr": "NSH",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401803217",
+    "date": "2026-02-01T00:00Z",
+    "name": "New Jersey Devils at Ottawa Senators",
+    "shortName": "NJ @ OTT",
+    "opponent": "Ottawa Senators",
+    "opponentAbbr": "OTT",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401803238",
+    "date": "2026-02-04T00:00Z",
+    "name": "Columbus Blue Jackets at New Jersey Devils",
+    "shortName": "CBJ @ NJ",
+    "opponent": "Columbus Blue Jackets",
+    "opponentAbbr": "CBJ",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401803256",
+    "date": "2026-02-06T00:00Z",
+    "name": "New York Islanders at New Jersey Devils",
+    "shortName": "NYI @ NJ",
+    "opponent": "New York Islanders",
+    "opponentAbbr": "NYI",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401803261",
+    "date": "2026-02-26T00:00Z",
+    "name": "Buffalo Sabres at New Jersey Devils",
+    "shortName": "BUF @ NJ",
+    "opponent": "Buffalo Sabres",
+    "opponentAbbr": "BUF",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401803273",
+    "date": "2026-02-27T00:00Z",
+    "name": "New Jersey Devils at Pittsburgh Penguins",
+    "shortName": "NJ @ PIT",
+    "opponent": "Pittsburgh Penguins",
+    "opponentAbbr": "PIT",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401803294",
+    "date": "2026-02-28T22:00Z",
+    "name": "New Jersey Devils at St. Louis Blues",
+    "shortName": "NJ @ STL",
+    "opponent": "St. Louis Blues",
+    "opponentAbbr": "STL",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401803312",
+    "date": "2026-03-04T00:00Z",
+    "name": "Florida Panthers at New Jersey Devils",
+    "shortName": "FLA @ NJ",
+    "opponent": "Florida Panthers",
+    "opponentAbbr": "FLA",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401803322",
+    "date": "2026-03-05T00:00Z",
+    "name": "Toronto Maple Leafs at New Jersey Devils",
+    "shortName": "TOR @ NJ",
+    "opponent": "Toronto Maple Leafs",
+    "opponentAbbr": "TOR",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401803342",
+    "date": "2026-03-07T20:00Z",
+    "name": "New York Rangers at New Jersey Devils",
+    "shortName": "NYR @ NJ",
+    "opponent": "New York Rangers",
+    "opponentAbbr": "NYR",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401803356",
+    "date": "2026-03-08T23:00Z",
+    "name": "Detroit Red Wings at New Jersey Devils",
+    "shortName": "DET @ NJ",
+    "opponent": "Detroit Red Wings",
+    "opponentAbbr": "DET",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401803383",
+    "date": "2026-03-12T23:00Z",
+    "name": "Calgary Flames at New Jersey Devils",
+    "shortName": "CGY @ NJ",
+    "opponent": "Calgary Flames",
+    "opponentAbbr": "CGY",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401803401",
+    "date": "2026-03-14T23:00Z",
+    "name": "Los Angeles Kings at New Jersey Devils",
+    "shortName": "LA @ NJ",
+    "opponent": "Los Angeles Kings",
+    "opponentAbbr": "LA",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401803415",
+    "date": "2026-03-16T23:00Z",
+    "name": "Boston Bruins at New Jersey Devils",
+    "shortName": "BOS @ NJ",
+    "opponent": "Boston Bruins",
+    "opponentAbbr": "BOS",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401803428",
+    "date": "2026-03-18T23:00Z",
+    "name": "New Jersey Devils at New York Rangers",
+    "shortName": "NJ @ NYR",
+    "opponent": "New York Rangers",
+    "opponentAbbr": "NYR",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401803446",
+    "date": "2026-03-20T23:00Z",
+    "name": "New Jersey Devils at Washington Capitals",
+    "shortName": "NJ @ WSH",
+    "opponent": "Washington Capitals",
+    "opponentAbbr": "WSH",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401803481",
+    "date": "2026-03-25T00:00Z",
+    "name": "New Jersey Devils at Dallas Stars",
+    "shortName": "NJ @ DAL",
+    "opponent": "Dallas Stars",
+    "opponentAbbr": "DAL",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401803495",
+    "date": "2026-03-27T00:00Z",
+    "name": "New Jersey Devils at Nashville Predators",
+    "shortName": "NJ @ NSH",
+    "opponent": "Nashville Predators",
+    "opponentAbbr": "NSH",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401803508",
+    "date": "2026-03-28T21:00Z",
+    "name": "New Jersey Devils at Carolina Hurricanes",
+    "shortName": "NJ @ CAR",
+    "opponent": "Carolina Hurricanes",
+    "opponentAbbr": "CAR",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401803522",
+    "date": "2026-03-29T23:00Z",
+    "name": "Chicago Blackhawks at New Jersey Devils",
+    "shortName": "CHI @ NJ",
+    "opponent": "Chicago Blackhawks",
+    "opponentAbbr": "CHI",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401803533",
+    "date": "2026-03-31T23:00Z",
+    "name": "New Jersey Devils at New York Rangers",
+    "shortName": "NJ @ NYR",
+    "opponent": "New York Rangers",
+    "opponentAbbr": "NYR",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401803545",
+    "date": "2026-04-02T23:30Z",
+    "name": "Washington Capitals at New Jersey Devils",
+    "shortName": "WSH @ NJ",
+    "opponent": "Washington Capitals",
+    "opponentAbbr": "WSH",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401803563",
+    "date": "2026-04-04T23:00Z",
+    "name": "Montreal Canadiens at New Jersey Devils",
+    "shortName": "MTL @ NJ",
+    "opponent": "Montreal Canadiens",
+    "opponentAbbr": "MTL",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401803577",
+    "date": "2026-04-05T23:00Z",
+    "name": "New Jersey Devils at Montreal Canadiens",
+    "shortName": "NJ @ MTL",
+    "opponent": "Montreal Canadiens",
+    "opponentAbbr": "MTL",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401803587",
+    "date": "2026-04-07T23:00Z",
+    "name": "Philadelphia Flyers at New Jersey Devils",
+    "shortName": "PHI @ NJ",
+    "opponent": "Philadelphia Flyers",
+    "opponentAbbr": "PHI",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401803602",
+    "date": "2026-04-09T23:00Z",
+    "name": "Pittsburgh Penguins at New Jersey Devils",
+    "shortName": "PIT @ NJ",
+    "opponent": "Pittsburgh Penguins",
+    "opponentAbbr": "PIT",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401803616",
+    "date": "2026-04-11T21:00Z",
+    "name": "New Jersey Devils at Detroit Red Wings",
+    "shortName": "NJ @ DET",
+    "opponent": "Detroit Red Wings",
+    "opponentAbbr": "DET",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401803630",
+    "date": "2026-04-12T23:00Z",
+    "name": "Ottawa Senators at New Jersey Devils",
+    "shortName": "OTT @ NJ",
+    "opponent": "Ottawa Senators",
+    "opponentAbbr": "OTT",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401803643",
+    "date": "2026-04-14T23:00Z",
+    "name": "New Jersey Devils at Boston Bruins",
+    "shortName": "NJ @ BOS",
+    "opponent": "Boston Bruins",
+    "opponentAbbr": "BOS",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  }
+]

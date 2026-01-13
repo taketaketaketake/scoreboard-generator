@@ -1,20 +1,27 @@
 {
   "name": "scoreboard-generator",
   "version": "1.0.0",
-  "description": "Headless scoreboard image generator using node-canvas",
+  "description": "Headless scoreboard image generator with automated sports pipeline",
   "type": "module",
   "main": "src/index.js",
   "scripts": {
     "test": "node src/test.js",
-    "generate": "node src/index.js"
+    "test:pipeline": "node test-pipeline.js",
+    "generate": "node src/index.js",
+    "start": "node orchestrator.js",
+    "fetch:schedules": "node -e \"import('./agents/schedule.js').then(m => m.fetchAllSchedules())\"",
+    "check:today": "node -e \"import('./jobs/daily.js').then(m => m.runDailyJob())\""
   },
   "keywords": [
     "scoreboard",
     "canvas",
-    "image-generator"
+    "image-generator",
+    "sports",
+    "espn"
   ],
   "license": "MIT",
   "dependencies": {
-    "@napi-rs/canvas": "^0.1.65"
+    "@napi-rs/canvas": "^0.1.65",
+    "node-cron": "^3.0.3"
   }
 }

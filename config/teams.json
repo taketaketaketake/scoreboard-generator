@@ -1,0 +1,44 @@
+{
+  "teams": [
+    {
+      "id": "lions",
+      "name": "Detroit Lions",
+      "displayName": "LIONS",
+      "espnId": 8,
+      "sport": "football",
+      "league": "nfl",
+      "color": "#005A8B",
+      "pollDelay": 150
+    },
+    {
+      "id": "pistons",
+      "name": "Detroit Pistons",
+      "displayName": "PISTONS",
+      "espnId": 10,
+      "sport": "basketball",
+      "league": "nba",
+      "color": "#C8102E",
+      "pollDelay": 120
+    },
+    {
+      "id": "tigers",
+      "name": "Detroit Tigers",
+      "displayName": "TIGERS",
+      "espnId": 6,
+      "sport": "baseball",
+      "league": "mlb",
+      "color": "#0C2340",
+      "pollDelay": 150
+    },
+    {
+      "id": "redwings",
+      "name": "Detroit Red Wings",
+      "displayName": "RED WINGS",
+      "espnId": 11,
+      "sport": "hockey",
+      "league": "nhl",
+      "color": "#CE1126",
+      "pollDelay": 120
+    }
+  ]
+}

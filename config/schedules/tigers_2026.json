@@ -1,0 +1,1622 @@
+[
+  {
+    "eventId": "401814701",
+    "date": "2026-03-26T20:10Z",
+    "name": "Detroit Tigers at San Diego Padres",
+    "shortName": "DET @ SD",
+    "opponent": "San Diego Padres",
+    "opponentAbbr": "SD",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401814706",
+    "date": "2026-03-28T01:40Z",
+    "name": "Detroit Tigers at San Diego Padres",
+    "shortName": "DET @ SD",
+    "opponent": "San Diego Padres",
+    "opponentAbbr": "SD",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401814720",
+    "date": "2026-03-29T00:40Z",
+    "name": "Detroit Tigers at San Diego Padres",
+    "shortName": "DET @ SD",
+    "opponent": "San Diego Padres",
+    "opponentAbbr": "SD",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401814747",
+    "date": "2026-03-31T02:10Z",
+    "name": "Detroit Tigers at Arizona Diamondbacks",
+    "shortName": "DET @ ARI",
+    "opponent": "Arizona Diamondbacks",
+    "opponentAbbr": "ARI",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401814761",
+    "date": "2026-04-01T01:40Z",
+    "name": "Detroit Tigers at Arizona Diamondbacks",
+    "shortName": "DET @ ARI",
+    "opponent": "Arizona Diamondbacks",
+    "opponentAbbr": "ARI",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401814776",
+    "date": "2026-04-01T19:40Z",
+    "name": "Detroit Tigers at Arizona Diamondbacks",
+    "shortName": "DET @ ARI",
+    "opponent": "Arizona Diamondbacks",
+    "opponentAbbr": "ARI",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401814788",
+    "date": "2026-04-03T17:10Z",
+    "name": "St. Louis Cardinals at Detroit Tigers",
+    "shortName": "STL @ DET",
+    "opponent": "St. Louis Cardinals",
+    "opponentAbbr": "STL",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401814802",
+    "date": "2026-04-04T17:05Z",
+    "name": "St. Louis Cardinals at Detroit Tigers",
+    "shortName": "STL @ DET",
+    "opponent": "St. Louis Cardinals",
+    "opponentAbbr": "STL",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401814817",
+    "date": "2026-04-05T23:20Z",
+    "name": "St. Louis Cardinals at Detroit Tigers",
+    "shortName": "STL @ DET",
+    "opponent": "St. Louis Cardinals",
+    "opponentAbbr": "STL",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401814835",
+    "date": "2026-04-06T23:40Z",
+    "name": "Detroit Tigers at Minnesota Twins",
+    "shortName": "DET @ MIN",
+    "opponent": "Minnesota Twins",
+    "opponentAbbr": "MIN",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401814850",
+    "date": "2026-04-07T23:40Z",
+    "name": "Detroit Tigers at Minnesota Twins",
+    "shortName": "DET @ MIN",
+    "opponent": "Minnesota Twins",
+    "opponentAbbr": "MIN",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401814865",
+    "date": "2026-04-08T23:40Z",
+    "name": "Detroit Tigers at Minnesota Twins",
+    "shortName": "DET @ MIN",
+    "opponent": "Minnesota Twins",
+    "opponentAbbr": "MIN",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401814874",
+    "date": "2026-04-09T17:40Z",
+    "name": "Detroit Tigers at Minnesota Twins",
+    "shortName": "DET @ MIN",
+    "opponent": "Minnesota Twins",
+    "opponentAbbr": "MIN",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401814880",
+    "date": "2026-04-10T22:40Z",
+    "name": "Miami Marlins at Detroit Tigers",
+    "shortName": "MIA @ DET",
+    "opponent": "Miami Marlins",
+    "opponentAbbr": "MIA",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401814895",
+    "date": "2026-04-11T17:10Z",
+    "name": "Miami Marlins at Detroit Tigers",
+    "shortName": "MIA @ DET",
+    "opponent": "Miami Marlins",
+    "opponentAbbr": "MIA",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401814910",
+    "date": "2026-04-12T17:40Z",
+    "name": "Miami Marlins at Detroit Tigers",
+    "shortName": "MIA @ DET",
+    "opponent": "Miami Marlins",
+    "opponentAbbr": "MIA",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401814934",
+    "date": "2026-04-14T22:40Z",
+    "name": "Kansas City Royals at Detroit Tigers",
+    "shortName": "KC @ DET",
+    "opponent": "Kansas City Royals",
+    "opponentAbbr": "KC",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401814949",
+    "date": "2026-04-15T22:40Z",
+    "name": "Kansas City Royals at Detroit Tigers",
+    "shortName": "KC @ DET",
+    "opponent": "Kansas City Royals",
+    "opponentAbbr": "KC",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401814963",
+    "date": "2026-04-16T17:10Z",
+    "name": "Kansas City Royals at Detroit Tigers",
+    "shortName": "KC @ DET",
+    "opponent": "Kansas City Royals",
+    "opponentAbbr": "KC",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401814973",
+    "date": "2026-04-17T23:10Z",
+    "name": "Detroit Tigers at Boston Red Sox",
+    "shortName": "DET @ BOS",
+    "opponent": "Boston Red Sox",
+    "opponentAbbr": "BOS",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401814988",
+    "date": "2026-04-18T20:10Z",
+    "name": "Detroit Tigers at Boston Red Sox",
+    "shortName": "DET @ BOS",
+    "opponent": "Boston Red Sox",
+    "opponentAbbr": "BOS",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815003",
+    "date": "2026-04-19T17:35Z",
+    "name": "Detroit Tigers at Boston Red Sox",
+    "shortName": "DET @ BOS",
+    "opponent": "Boston Red Sox",
+    "opponentAbbr": "BOS",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815018",
+    "date": "2026-04-20T15:05Z",
+    "name": "Detroit Tigers at Boston Red Sox",
+    "shortName": "DET @ BOS",
+    "opponent": "Boston Red Sox",
+    "opponentAbbr": "BOS",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815029",
+    "date": "2026-04-21T22:40Z",
+    "name": "Milwaukee Brewers at Detroit Tigers",
+    "shortName": "MIL @ DET",
+    "opponent": "Milwaukee Brewers",
+    "opponentAbbr": "MIL",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815044",
+    "date": "2026-04-22T22:40Z",
+    "name": "Milwaukee Brewers at Detroit Tigers",
+    "shortName": "MIL @ DET",
+    "opponent": "Milwaukee Brewers",
+    "opponentAbbr": "MIL",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815057",
+    "date": "2026-04-23T17:10Z",
+    "name": "Milwaukee Brewers at Detroit Tigers",
+    "shortName": "MIL @ DET",
+    "opponent": "Milwaukee Brewers",
+    "opponentAbbr": "MIL",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815068",
+    "date": "2026-04-24T22:40Z",
+    "name": "Detroit Tigers at Cincinnati Reds",
+    "shortName": "DET @ CIN",
+    "opponent": "Cincinnati Reds",
+    "opponentAbbr": "CIN",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815083",
+    "date": "2026-04-25T23:15Z",
+    "name": "Detroit Tigers at Cincinnati Reds",
+    "shortName": "DET @ CIN",
+    "opponent": "Cincinnati Reds",
+    "opponentAbbr": "CIN",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815098",
+    "date": "2026-04-26T17:40Z",
+    "name": "Detroit Tigers at Cincinnati Reds",
+    "shortName": "DET @ CIN",
+    "opponent": "Cincinnati Reds",
+    "opponentAbbr": "CIN",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815120",
+    "date": "2026-04-28T23:15Z",
+    "name": "Detroit Tigers at Atlanta Braves",
+    "shortName": "DET @ ATL",
+    "opponent": "Atlanta Braves",
+    "opponentAbbr": "ATL",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815135",
+    "date": "2026-04-29T23:15Z",
+    "name": "Detroit Tigers at Atlanta Braves",
+    "shortName": "DET @ ATL",
+    "opponent": "Atlanta Braves",
+    "opponentAbbr": "ATL",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815149",
+    "date": "2026-04-30T16:15Z",
+    "name": "Detroit Tigers at Atlanta Braves",
+    "shortName": "DET @ ATL",
+    "opponent": "Atlanta Braves",
+    "opponentAbbr": "ATL",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815163",
+    "date": "2026-05-01T22:40Z",
+    "name": "Texas Rangers at Detroit Tigers",
+    "shortName": "TEX @ DET",
+    "opponent": "Texas Rangers",
+    "opponentAbbr": "TEX",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815178",
+    "date": "2026-05-02T23:15Z",
+    "name": "Texas Rangers at Detroit Tigers",
+    "shortName": "TEX @ DET",
+    "opponent": "Texas Rangers",
+    "opponentAbbr": "TEX",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815193",
+    "date": "2026-05-03T23:20Z",
+    "name": "Texas Rangers at Detroit Tigers",
+    "shortName": "TEX @ DET",
+    "opponent": "Texas Rangers",
+    "opponentAbbr": "TEX",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815203",
+    "date": "2026-05-04T22:40Z",
+    "name": "Boston Red Sox at Detroit Tigers",
+    "shortName": "BOS @ DET",
+    "opponent": "Boston Red Sox",
+    "opponentAbbr": "BOS",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815216",
+    "date": "2026-05-05T22:40Z",
+    "name": "Boston Red Sox at Detroit Tigers",
+    "shortName": "BOS @ DET",
+    "opponent": "Boston Red Sox",
+    "opponentAbbr": "BOS",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815231",
+    "date": "2026-05-06T22:40Z",
+    "name": "Boston Red Sox at Detroit Tigers",
+    "shortName": "BOS @ DET",
+    "opponent": "Boston Red Sox",
+    "opponentAbbr": "BOS",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815261",
+    "date": "2026-05-08T23:40Z",
+    "name": "Detroit Tigers at Kansas City Royals",
+    "shortName": "DET @ KC",
+    "opponent": "Kansas City Royals",
+    "opponentAbbr": "KC",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815276",
+    "date": "2026-05-09T23:10Z",
+    "name": "Detroit Tigers at Kansas City Royals",
+    "shortName": "DET @ KC",
+    "opponent": "Kansas City Royals",
+    "opponentAbbr": "KC",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815291",
+    "date": "2026-05-10T23:20Z",
+    "name": "Detroit Tigers at Kansas City Royals",
+    "shortName": "DET @ KC",
+    "opponent": "Kansas City Royals",
+    "opponentAbbr": "KC",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815307",
+    "date": "2026-05-12T04:00Z",
+    "name": "Detroit Tigers at New York Mets",
+    "shortName": "DET @ NYM",
+    "opponent": "New York Mets",
+    "opponentAbbr": "NYM",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815322",
+    "date": "2026-05-13T04:00Z",
+    "name": "Detroit Tigers at New York Mets",
+    "shortName": "DET @ NYM",
+    "opponent": "New York Mets",
+    "opponentAbbr": "NYM",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815336",
+    "date": "2026-05-14T04:00Z",
+    "name": "Detroit Tigers at New York Mets",
+    "shortName": "DET @ NYM",
+    "opponent": "New York Mets",
+    "opponentAbbr": "NYM",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815351",
+    "date": "2026-05-15T22:40Z",
+    "name": "Toronto Blue Jays at Detroit Tigers",
+    "shortName": "TOR @ DET",
+    "opponent": "Toronto Blue Jays",
+    "opponentAbbr": "TOR",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815366",
+    "date": "2026-05-16T17:10Z",
+    "name": "Toronto Blue Jays at Detroit Tigers",
+    "shortName": "TOR @ DET",
+    "opponent": "Toronto Blue Jays",
+    "opponentAbbr": "TOR",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815381",
+    "date": "2026-05-17T17:40Z",
+    "name": "Toronto Blue Jays at Detroit Tigers",
+    "shortName": "TOR @ DET",
+    "opponent": "Toronto Blue Jays",
+    "opponentAbbr": "TOR",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815393",
+    "date": "2026-05-18T22:40Z",
+    "name": "Cleveland Guardians at Detroit Tigers",
+    "shortName": "CLE @ DET",
+    "opponent": "Cleveland Guardians",
+    "opponentAbbr": "CLE",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815407",
+    "date": "2026-05-19T22:40Z",
+    "name": "Cleveland Guardians at Detroit Tigers",
+    "shortName": "CLE @ DET",
+    "opponent": "Cleveland Guardians",
+    "opponentAbbr": "CLE",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815422",
+    "date": "2026-05-20T22:40Z",
+    "name": "Cleveland Guardians at Detroit Tigers",
+    "shortName": "CLE @ DET",
+    "opponent": "Cleveland Guardians",
+    "opponentAbbr": "CLE",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815435",
+    "date": "2026-05-21T17:10Z",
+    "name": "Cleveland Guardians at Detroit Tigers",
+    "shortName": "CLE @ DET",
+    "opponent": "Cleveland Guardians",
+    "opponentAbbr": "CLE",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815442",
+    "date": "2026-05-22T23:05Z",
+    "name": "Detroit Tigers at Baltimore Orioles",
+    "shortName": "DET @ BAL",
+    "opponent": "Baltimore Orioles",
+    "opponentAbbr": "BAL",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815457",
+    "date": "2026-05-23T20:05Z",
+    "name": "Detroit Tigers at Baltimore Orioles",
+    "shortName": "DET @ BAL",
+    "opponent": "Baltimore Orioles",
+    "opponentAbbr": "BAL",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815472",
+    "date": "2026-05-24T17:35Z",
+    "name": "Detroit Tigers at Baltimore Orioles",
+    "shortName": "DET @ BAL",
+    "opponent": "Baltimore Orioles",
+    "opponentAbbr": "BAL",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815499",
+    "date": "2026-05-26T22:40Z",
+    "name": "Los Angeles Angels at Detroit Tigers",
+    "shortName": "LAA @ DET",
+    "opponent": "Los Angeles Angels",
+    "opponentAbbr": "LAA",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815514",
+    "date": "2026-05-27T22:40Z",
+    "name": "Los Angeles Angels at Detroit Tigers",
+    "shortName": "LAA @ DET",
+    "opponent": "Los Angeles Angels",
+    "opponentAbbr": "LAA",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815529",
+    "date": "2026-05-28T17:10Z",
+    "name": "Los Angeles Angels at Detroit Tigers",
+    "shortName": "LAA @ DET",
+    "opponent": "Los Angeles Angels",
+    "opponentAbbr": "LAA",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815543",
+    "date": "2026-05-29T23:40Z",
+    "name": "Detroit Tigers at Chicago White Sox",
+    "shortName": "DET @ CHW",
+    "opponent": "Chicago White Sox",
+    "opponentAbbr": "CHW",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815558",
+    "date": "2026-05-30T18:10Z",
+    "name": "Detroit Tigers at Chicago White Sox",
+    "shortName": "DET @ CHW",
+    "opponent": "Chicago White Sox",
+    "opponentAbbr": "CHW",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815573",
+    "date": "2026-05-31T18:10Z",
+    "name": "Detroit Tigers at Chicago White Sox",
+    "shortName": "DET @ CHW",
+    "opponent": "Chicago White Sox",
+    "opponentAbbr": "CHW",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815580",
+    "date": "2026-06-01T22:40Z",
+    "name": "Detroit Tigers at Tampa Bay Rays",
+    "shortName": "DET @ TB",
+    "opponent": "Tampa Bay Rays",
+    "opponentAbbr": "TB",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815591",
+    "date": "2026-06-02T22:40Z",
+    "name": "Detroit Tigers at Tampa Bay Rays",
+    "shortName": "DET @ TB",
+    "opponent": "Tampa Bay Rays",
+    "opponentAbbr": "TB",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815606",
+    "date": "2026-06-03T17:10Z",
+    "name": "Detroit Tigers at Tampa Bay Rays",
+    "shortName": "DET @ TB",
+    "opponent": "Tampa Bay Rays",
+    "opponentAbbr": "TB",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815632",
+    "date": "2026-06-05T22:40Z",
+    "name": "Seattle Mariners at Detroit Tigers",
+    "shortName": "SEA @ DET",
+    "opponent": "Seattle Mariners",
+    "opponentAbbr": "SEA",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815647",
+    "date": "2026-06-06T17:10Z",
+    "name": "Seattle Mariners at Detroit Tigers",
+    "shortName": "SEA @ DET",
+    "opponent": "Seattle Mariners",
+    "opponentAbbr": "SEA",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815662",
+    "date": "2026-06-07T17:40Z",
+    "name": "Seattle Mariners at Detroit Tigers",
+    "shortName": "SEA @ DET",
+    "opponent": "Seattle Mariners",
+    "opponentAbbr": "SEA",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815684",
+    "date": "2026-06-09T22:40Z",
+    "name": "Minnesota Twins at Detroit Tigers",
+    "shortName": "MIN @ DET",
+    "opponent": "Minnesota Twins",
+    "opponentAbbr": "MIN",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815699",
+    "date": "2026-06-10T22:40Z",
+    "name": "Minnesota Twins at Detroit Tigers",
+    "shortName": "MIN @ DET",
+    "opponent": "Minnesota Twins",
+    "opponentAbbr": "MIN",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815713",
+    "date": "2026-06-11T17:10Z",
+    "name": "Minnesota Twins at Detroit Tigers",
+    "shortName": "MIN @ DET",
+    "opponent": "Minnesota Twins",
+    "opponentAbbr": "MIN",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815721",
+    "date": "2026-06-12T04:00Z",
+    "name": "Detroit Tigers at Cleveland Guardians",
+    "shortName": "DET @ CLE",
+    "opponent": "Cleveland Guardians",
+    "opponentAbbr": "CLE",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815736",
+    "date": "2026-06-13T04:00Z",
+    "name": "Detroit Tigers at Cleveland Guardians",
+    "shortName": "DET @ CLE",
+    "opponent": "Cleveland Guardians",
+    "opponentAbbr": "CLE",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815751",
+    "date": "2026-06-14T04:00Z",
+    "name": "Detroit Tigers at Cleveland Guardians",
+    "shortName": "DET @ CLE",
+    "opponent": "Cleveland Guardians",
+    "opponentAbbr": "CLE",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815768",
+    "date": "2026-06-15T04:00Z",
+    "name": "Detroit Tigers at Houston Astros",
+    "shortName": "DET @ HOU",
+    "opponent": "Houston Astros",
+    "opponentAbbr": "HOU",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815782",
+    "date": "2026-06-16T04:00Z",
+    "name": "Detroit Tigers at Houston Astros",
+    "shortName": "DET @ HOU",
+    "opponent": "Houston Astros",
+    "opponentAbbr": "HOU",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815797",
+    "date": "2026-06-17T04:00Z",
+    "name": "Detroit Tigers at Houston Astros",
+    "shortName": "DET @ HOU",
+    "opponent": "Houston Astros",
+    "opponentAbbr": "HOU",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815812",
+    "date": "2026-06-19T22:40Z",
+    "name": "Chicago White Sox at Detroit Tigers",
+    "shortName": "CHW @ DET",
+    "opponent": "Chicago White Sox",
+    "opponentAbbr": "CHW",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815825",
+    "date": "2026-06-20T17:10Z",
+    "name": "Chicago White Sox at Detroit Tigers",
+    "shortName": "CHW @ DET",
+    "opponent": "Chicago White Sox",
+    "opponentAbbr": "CHW",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815839",
+    "date": "2026-06-21T17:40Z",
+    "name": "Chicago White Sox at Detroit Tigers",
+    "shortName": "CHW @ DET",
+    "opponent": "Chicago White Sox",
+    "opponentAbbr": "CHW",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815858",
+    "date": "2026-06-22T22:40Z",
+    "name": "New York Yankees at Detroit Tigers",
+    "shortName": "NYY @ DET",
+    "opponent": "New York Yankees",
+    "opponentAbbr": "NYY",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815871",
+    "date": "2026-06-23T22:40Z",
+    "name": "New York Yankees at Detroit Tigers",
+    "shortName": "NYY @ DET",
+    "opponent": "New York Yankees",
+    "opponentAbbr": "NYY",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815886",
+    "date": "2026-06-24T22:40Z",
+    "name": "New York Yankees at Detroit Tigers",
+    "shortName": "NYY @ DET",
+    "opponent": "New York Yankees",
+    "opponentAbbr": "NYY",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815898",
+    "date": "2026-06-25T22:40Z",
+    "name": "Houston Astros at Detroit Tigers",
+    "shortName": "HOU @ DET",
+    "opponent": "Houston Astros",
+    "opponentAbbr": "HOU",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815908",
+    "date": "2026-06-26T22:40Z",
+    "name": "Houston Astros at Detroit Tigers",
+    "shortName": "HOU @ DET",
+    "opponent": "Houston Astros",
+    "opponentAbbr": "HOU",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815923",
+    "date": "2026-06-27T17:10Z",
+    "name": "Houston Astros at Detroit Tigers",
+    "shortName": "HOU @ DET",
+    "opponent": "Houston Astros",
+    "opponentAbbr": "HOU",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815938",
+    "date": "2026-06-28T17:40Z",
+    "name": "Houston Astros at Detroit Tigers",
+    "shortName": "HOU @ DET",
+    "opponent": "Houston Astros",
+    "opponentAbbr": "HOU",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815952",
+    "date": "2026-06-29T23:05Z",
+    "name": "Detroit Tigers at New York Yankees",
+    "shortName": "DET @ NYY",
+    "opponent": "New York Yankees",
+    "opponentAbbr": "NYY",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815965",
+    "date": "2026-06-30T23:05Z",
+    "name": "Detroit Tigers at New York Yankees",
+    "shortName": "DET @ NYY",
+    "opponent": "New York Yankees",
+    "opponentAbbr": "NYY",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815980",
+    "date": "2026-07-01T17:35Z",
+    "name": "Detroit Tigers at New York Yankees",
+    "shortName": "DET @ NYY",
+    "opponent": "New York Yankees",
+    "opponentAbbr": "NYY",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401815997",
+    "date": "2026-07-03T00:05Z",
+    "name": "Detroit Tigers at Texas Rangers",
+    "shortName": "DET @ TEX",
+    "opponent": "Texas Rangers",
+    "opponentAbbr": "TEX",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816020",
+    "date": "2026-07-04T20:05Z",
+    "name": "Detroit Tigers at Texas Rangers",
+    "shortName": "DET @ TEX",
+    "opponent": "Texas Rangers",
+    "opponentAbbr": "TEX",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816035",
+    "date": "2026-07-05T19:30Z",
+    "name": "Detroit Tigers at Texas Rangers",
+    "shortName": "DET @ TEX",
+    "opponent": "Texas Rangers",
+    "opponentAbbr": "TEX",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816053",
+    "date": "2026-07-07T22:40Z",
+    "name": "Athletics Athletics at Detroit Tigers",
+    "shortName": "ATH @ DET",
+    "opponent": "Athletics",
+    "opponentAbbr": "ATH",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816068",
+    "date": "2026-07-08T22:40Z",
+    "name": "Athletics Athletics at Detroit Tigers",
+    "shortName": "ATH @ DET",
+    "opponent": "Athletics",
+    "opponentAbbr": "ATH",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816083",
+    "date": "2026-07-09T22:40Z",
+    "name": "Athletics Athletics at Detroit Tigers",
+    "shortName": "ATH @ DET",
+    "opponent": "Athletics",
+    "opponentAbbr": "ATH",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816102",
+    "date": "2026-07-10T22:40Z",
+    "name": "Philadelphia Phillies at Detroit Tigers",
+    "shortName": "PHI @ DET",
+    "opponent": "Philadelphia Phillies",
+    "opponentAbbr": "PHI",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816117",
+    "date": "2026-07-11T22:10Z",
+    "name": "Philadelphia Phillies at Detroit Tigers",
+    "shortName": "PHI @ DET",
+    "opponent": "Philadelphia Phillies",
+    "opponentAbbr": "PHI",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816132",
+    "date": "2026-07-12T17:40Z",
+    "name": "Philadelphia Phillies at Detroit Tigers",
+    "shortName": "PHI @ DET",
+    "opponent": "Philadelphia Phillies",
+    "opponentAbbr": "PHI",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816152",
+    "date": "2026-07-18T01:38Z",
+    "name": "Detroit Tigers at Los Angeles Angels",
+    "shortName": "DET @ LAA",
+    "opponent": "Los Angeles Angels",
+    "opponentAbbr": "LAA",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816167",
+    "date": "2026-07-19T02:07Z",
+    "name": "Detroit Tigers at Los Angeles Angels",
+    "shortName": "DET @ LAA",
+    "opponent": "Los Angeles Angels",
+    "opponentAbbr": "LAA",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816182",
+    "date": "2026-07-19T20:07Z",
+    "name": "Detroit Tigers at Los Angeles Angels",
+    "shortName": "DET @ LAA",
+    "opponent": "Los Angeles Angels",
+    "opponentAbbr": "LAA",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816193",
+    "date": "2026-07-20T04:00Z",
+    "name": "Detroit Tigers at Chicago Cubs",
+    "shortName": "DET @ CHC",
+    "opponent": "Chicago Cubs",
+    "opponentAbbr": "CHC",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816208",
+    "date": "2026-07-21T04:00Z",
+    "name": "Detroit Tigers at Chicago Cubs",
+    "shortName": "DET @ CHC",
+    "opponent": "Chicago Cubs",
+    "opponentAbbr": "CHC",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816223",
+    "date": "2026-07-22T04:00Z",
+    "name": "Detroit Tigers at Chicago Cubs",
+    "shortName": "DET @ CHC",
+    "opponent": "Chicago Cubs",
+    "opponentAbbr": "CHC",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816231",
+    "date": "2026-07-23T22:40Z",
+    "name": "Kansas City Royals at Detroit Tigers",
+    "shortName": "KC @ DET",
+    "opponent": "Kansas City Royals",
+    "opponentAbbr": "KC",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816239",
+    "date": "2026-07-24T22:40Z",
+    "name": "Kansas City Royals at Detroit Tigers",
+    "shortName": "KC @ DET",
+    "opponent": "Kansas City Royals",
+    "opponentAbbr": "KC",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816254",
+    "date": "2026-07-25T17:10Z",
+    "name": "Kansas City Royals at Detroit Tigers",
+    "shortName": "KC @ DET",
+    "opponent": "Kansas City Royals",
+    "opponentAbbr": "KC",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816269",
+    "date": "2026-07-26T17:40Z",
+    "name": "Kansas City Royals at Detroit Tigers",
+    "shortName": "KC @ DET",
+    "opponent": "Kansas City Royals",
+    "opponentAbbr": "KC",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816282",
+    "date": "2026-07-27T22:40Z",
+    "name": "Baltimore Orioles at Detroit Tigers",
+    "shortName": "BAL @ DET",
+    "opponent": "Baltimore Orioles",
+    "opponentAbbr": "BAL",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816294",
+    "date": "2026-07-28T22:40Z",
+    "name": "Baltimore Orioles at Detroit Tigers",
+    "shortName": "BAL @ DET",
+    "opponent": "Baltimore Orioles",
+    "opponentAbbr": "BAL",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816309",
+    "date": "2026-07-29T17:10Z",
+    "name": "Baltimore Orioles at Detroit Tigers",
+    "shortName": "BAL @ DET",
+    "opponent": "Baltimore Orioles",
+    "opponentAbbr": "BAL",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816343",
+    "date": "2026-08-01T01:40Z",
+    "name": "Detroit Tigers at Athletics Athletics",
+    "shortName": "DET @ ATH",
+    "opponent": "Athletics",
+    "opponentAbbr": "ATH",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816358",
+    "date": "2026-08-02T01:40Z",
+    "name": "Detroit Tigers at Athletics Athletics",
+    "shortName": "DET @ ATH",
+    "opponent": "Athletics",
+    "opponentAbbr": "ATH",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816373",
+    "date": "2026-08-02T20:05Z",
+    "name": "Detroit Tigers at Athletics Athletics",
+    "shortName": "DET @ ATH",
+    "opponent": "Athletics",
+    "opponentAbbr": "ATH",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816397",
+    "date": "2026-08-05T01:40Z",
+    "name": "Detroit Tigers at Seattle Mariners",
+    "shortName": "DET @ SEA",
+    "opponent": "Seattle Mariners",
+    "opponentAbbr": "SEA",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816412",
+    "date": "2026-08-06T01:40Z",
+    "name": "Detroit Tigers at Seattle Mariners",
+    "shortName": "DET @ SEA",
+    "opponent": "Seattle Mariners",
+    "opponentAbbr": "SEA",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816422",
+    "date": "2026-08-06T20:10Z",
+    "name": "Detroit Tigers at Seattle Mariners",
+    "shortName": "DET @ SEA",
+    "opponent": "Seattle Mariners",
+    "opponentAbbr": "SEA",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816435",
+    "date": "2026-08-08T02:15Z",
+    "name": "Detroit Tigers at San Francisco Giants",
+    "shortName": "DET @ SF",
+    "opponent": "San Francisco Giants",
+    "opponentAbbr": "SF",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816450",
+    "date": "2026-08-08T23:15Z",
+    "name": "Detroit Tigers at San Francisco Giants",
+    "shortName": "DET @ SF",
+    "opponent": "San Francisco Giants",
+    "opponentAbbr": "SF",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816465",
+    "date": "2026-08-09T20:05Z",
+    "name": "Detroit Tigers at San Francisco Giants",
+    "shortName": "DET @ SF",
+    "opponent": "San Francisco Giants",
+    "opponentAbbr": "SF",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816481",
+    "date": "2026-08-11T22:40Z",
+    "name": "Cleveland Guardians at Detroit Tigers",
+    "shortName": "CLE @ DET",
+    "opponent": "Cleveland Guardians",
+    "opponentAbbr": "CLE",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816496",
+    "date": "2026-08-12T22:40Z",
+    "name": "Cleveland Guardians at Detroit Tigers",
+    "shortName": "CLE @ DET",
+    "opponent": "Cleveland Guardians",
+    "opponentAbbr": "CLE",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816511",
+    "date": "2026-08-13T17:10Z",
+    "name": "Cleveland Guardians at Detroit Tigers",
+    "shortName": "CLE @ DET",
+    "opponent": "Cleveland Guardians",
+    "opponentAbbr": "CLE",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816520",
+    "date": "2026-08-14T22:40Z",
+    "name": "Chicago White Sox at Detroit Tigers",
+    "shortName": "CHW @ DET",
+    "opponent": "Chicago White Sox",
+    "opponentAbbr": "CHW",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816535",
+    "date": "2026-08-15T17:10Z",
+    "name": "Chicago White Sox at Detroit Tigers",
+    "shortName": "CHW @ DET",
+    "opponent": "Chicago White Sox",
+    "opponentAbbr": "CHW",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816550",
+    "date": "2026-08-16T17:40Z",
+    "name": "Chicago White Sox at Detroit Tigers",
+    "shortName": "CHW @ DET",
+    "opponent": "Chicago White Sox",
+    "opponentAbbr": "CHW",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816564",
+    "date": "2026-08-17T22:40Z",
+    "name": "Detroit Tigers at Pittsburgh Pirates",
+    "shortName": "DET @ PIT",
+    "opponent": "Pittsburgh Pirates",
+    "opponentAbbr": "PIT",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816572",
+    "date": "2026-08-18T22:40Z",
+    "name": "Detroit Tigers at Pittsburgh Pirates",
+    "shortName": "DET @ PIT",
+    "opponent": "Pittsburgh Pirates",
+    "opponentAbbr": "PIT",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816587",
+    "date": "2026-08-19T16:35Z",
+    "name": "Detroit Tigers at Pittsburgh Pirates",
+    "shortName": "DET @ PIT",
+    "opponent": "Pittsburgh Pirates",
+    "opponentAbbr": "PIT",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816618",
+    "date": "2026-08-22T00:10Z",
+    "name": "Detroit Tigers at Kansas City Royals",
+    "shortName": "DET @ KC",
+    "opponent": "Kansas City Royals",
+    "opponentAbbr": "KC",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816633",
+    "date": "2026-08-22T23:10Z",
+    "name": "Detroit Tigers at Kansas City Royals",
+    "shortName": "DET @ KC",
+    "opponent": "Kansas City Royals",
+    "opponentAbbr": "KC",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816648",
+    "date": "2026-08-23T18:10Z",
+    "name": "Detroit Tigers at Kansas City Royals",
+    "shortName": "DET @ KC",
+    "opponent": "Kansas City Royals",
+    "opponentAbbr": "KC",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816657",
+    "date": "2026-08-24T22:40Z",
+    "name": "Tampa Bay Rays at Detroit Tigers",
+    "shortName": "TB @ DET",
+    "opponent": "Tampa Bay Rays",
+    "opponentAbbr": "TB",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816671",
+    "date": "2026-08-25T22:40Z",
+    "name": "Tampa Bay Rays at Detroit Tigers",
+    "shortName": "TB @ DET",
+    "opponent": "Tampa Bay Rays",
+    "opponentAbbr": "TB",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816686",
+    "date": "2026-08-26T17:10Z",
+    "name": "Tampa Bay Rays at Detroit Tigers",
+    "shortName": "TB @ DET",
+    "opponent": "Tampa Bay Rays",
+    "opponentAbbr": "TB",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816706",
+    "date": "2026-08-28T22:40Z",
+    "name": "Los Angeles Dodgers at Detroit Tigers",
+    "shortName": "LAD @ DET",
+    "opponent": "Los Angeles Dodgers",
+    "opponentAbbr": "LAD",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816721",
+    "date": "2026-08-29T17:10Z",
+    "name": "Los Angeles Dodgers at Detroit Tigers",
+    "shortName": "LAD @ DET",
+    "opponent": "Los Angeles Dodgers",
+    "opponentAbbr": "LAD",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816736",
+    "date": "2026-08-30T17:40Z",
+    "name": "Los Angeles Dodgers at Detroit Tigers",
+    "shortName": "LAD @ DET",
+    "opponent": "Los Angeles Dodgers",
+    "opponentAbbr": "LAD",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816753",
+    "date": "2026-08-31T23:40Z",
+    "name": "Detroit Tigers at Minnesota Twins",
+    "shortName": "DET @ MIN",
+    "opponent": "Minnesota Twins",
+    "opponentAbbr": "MIN",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816766",
+    "date": "2026-09-01T23:40Z",
+    "name": "Detroit Tigers at Minnesota Twins",
+    "shortName": "DET @ MIN",
+    "opponent": "Minnesota Twins",
+    "opponentAbbr": "MIN",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816781",
+    "date": "2026-09-02T23:40Z",
+    "name": "Detroit Tigers at Minnesota Twins",
+    "shortName": "DET @ MIN",
+    "opponent": "Minnesota Twins",
+    "opponentAbbr": "MIN",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816801",
+    "date": "2026-09-04T04:00Z",
+    "name": "Detroit Tigers at Cleveland Guardians",
+    "shortName": "DET @ CLE",
+    "opponent": "Cleveland Guardians",
+    "opponentAbbr": "CLE",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816816",
+    "date": "2026-09-05T04:00Z",
+    "name": "Detroit Tigers at Cleveland Guardians",
+    "shortName": "DET @ CLE",
+    "opponent": "Cleveland Guardians",
+    "opponentAbbr": "CLE",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816831",
+    "date": "2026-09-06T04:00Z",
+    "name": "Detroit Tigers at Cleveland Guardians",
+    "shortName": "DET @ CLE",
+    "opponent": "Cleveland Guardians",
+    "opponentAbbr": "CLE",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816845",
+    "date": "2026-09-07T17:10Z",
+    "name": "Minnesota Twins at Detroit Tigers",
+    "shortName": "MIN @ DET",
+    "opponent": "Minnesota Twins",
+    "opponentAbbr": "MIN",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816857",
+    "date": "2026-09-08T22:40Z",
+    "name": "Minnesota Twins at Detroit Tigers",
+    "shortName": "MIN @ DET",
+    "opponent": "Minnesota Twins",
+    "opponentAbbr": "MIN",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816872",
+    "date": "2026-09-09T17:10Z",
+    "name": "Minnesota Twins at Detroit Tigers",
+    "shortName": "MIN @ DET",
+    "opponent": "Minnesota Twins",
+    "opponentAbbr": "MIN",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816890",
+    "date": "2026-09-11T22:40Z",
+    "name": "Colorado Rockies at Detroit Tigers",
+    "shortName": "COL @ DET",
+    "opponent": "Colorado Rockies",
+    "opponentAbbr": "COL",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816905",
+    "date": "2026-09-12T17:10Z",
+    "name": "Colorado Rockies at Detroit Tigers",
+    "shortName": "COL @ DET",
+    "opponent": "Colorado Rockies",
+    "opponentAbbr": "COL",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816920",
+    "date": "2026-09-13T17:40Z",
+    "name": "Colorado Rockies at Detroit Tigers",
+    "shortName": "COL @ DET",
+    "opponent": "Colorado Rockies",
+    "opponentAbbr": "COL",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816935",
+    "date": "2026-09-14T23:07Z",
+    "name": "Detroit Tigers at Toronto Blue Jays",
+    "shortName": "DET @ TOR",
+    "opponent": "Toronto Blue Jays",
+    "opponentAbbr": "TOR",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816946",
+    "date": "2026-09-15T23:07Z",
+    "name": "Detroit Tigers at Toronto Blue Jays",
+    "shortName": "DET @ TOR",
+    "opponent": "Toronto Blue Jays",
+    "opponentAbbr": "TOR",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816961",
+    "date": "2026-09-16T19:07Z",
+    "name": "Detroit Tigers at Toronto Blue Jays",
+    "shortName": "DET @ TOR",
+    "opponent": "Toronto Blue Jays",
+    "opponentAbbr": "TOR",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816978",
+    "date": "2026-09-17T23:40Z",
+    "name": "Detroit Tigers at Chicago White Sox",
+    "shortName": "DET @ CHW",
+    "opponent": "Chicago White Sox",
+    "opponentAbbr": "CHW",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401816989",
+    "date": "2026-09-18T23:40Z",
+    "name": "Detroit Tigers at Chicago White Sox",
+    "shortName": "DET @ CHW",
+    "opponent": "Chicago White Sox",
+    "opponentAbbr": "CHW",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401817004",
+    "date": "2026-09-19T23:10Z",
+    "name": "Detroit Tigers at Chicago White Sox",
+    "shortName": "DET @ CHW",
+    "opponent": "Chicago White Sox",
+    "opponentAbbr": "CHW",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401817019",
+    "date": "2026-09-20T18:10Z",
+    "name": "Detroit Tigers at Chicago White Sox",
+    "shortName": "DET @ CHW",
+    "opponent": "Chicago White Sox",
+    "opponentAbbr": "CHW",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401817028",
+    "date": "2026-09-21T22:40Z",
+    "name": "Washington Nationals at Detroit Tigers",
+    "shortName": "WSH @ DET",
+    "opponent": "Washington Nationals",
+    "opponentAbbr": "WSH",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401817036",
+    "date": "2026-09-22T22:40Z",
+    "name": "Washington Nationals at Detroit Tigers",
+    "shortName": "WSH @ DET",
+    "opponent": "Washington Nationals",
+    "opponentAbbr": "WSH",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401817051",
+    "date": "2026-09-23T17:10Z",
+    "name": "Washington Nationals at Detroit Tigers",
+    "shortName": "WSH @ DET",
+    "opponent": "Washington Nationals",
+    "opponentAbbr": "WSH",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401817077",
+    "date": "2026-09-25T22:40Z",
+    "name": "Pittsburgh Pirates at Detroit Tigers",
+    "shortName": "PIT @ DET",
+    "opponent": "Pittsburgh Pirates",
+    "opponentAbbr": "PIT",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401817092",
+    "date": "2026-09-26T17:10Z",
+    "name": "Pittsburgh Pirates at Detroit Tigers",
+    "shortName": "PIT @ DET",
+    "opponent": "Pittsburgh Pirates",
+    "opponentAbbr": "PIT",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401817107",
+    "date": "2026-09-27T19:10Z",
+    "name": "Pittsburgh Pirates at Detroit Tigers",
+    "shortName": "PIT @ DET",
+    "opponent": "Pittsburgh Pirates",
+    "opponentAbbr": "PIT",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  }
+]
