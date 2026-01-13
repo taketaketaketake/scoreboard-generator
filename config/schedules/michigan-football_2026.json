@@ -1,0 +1,12 @@
+[
+  {
+    "eventId": "401778330",
+    "date": "2025-12-31T20:00Z",
+    "name": "Michigan Wolverines at Texas Longhorns",
+    "shortName": "MICH VS TEX",
+    "opponent": "Texas Longhorns",
+    "opponentAbbr": "TEX",
+    "home": false,
+    "status": "STATUS_FINAL"
+  }
+]

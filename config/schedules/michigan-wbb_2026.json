@@ -1,0 +1,292 @@
+[
+  {
+    "eventId": "401813871",
+    "date": "2025-11-05T00:00Z",
+    "name": "Canisius Golden Griffins at Michigan Wolverines",
+    "shortName": "CAN @ MICH",
+    "opponent": "Canisius Golden Griffins",
+    "opponentAbbr": "CAN",
+    "home": true,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401824075",
+    "date": "2025-11-09T17:00Z",
+    "name": "Harvard Crimson at Michigan Wolverines",
+    "shortName": "HARV @ MICH",
+    "opponent": "Harvard Crimson",
+    "opponentAbbr": "HARV",
+    "home": true,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401825022",
+    "date": "2025-11-15T21:00Z",
+    "name": "Michigan Wolverines at Notre Dame Fighting Irish",
+    "shortName": "MICH VS ND",
+    "opponent": "Notre Dame Fighting Irish",
+    "opponentAbbr": "ND",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401823693",
+    "date": "2025-11-19T00:00Z",
+    "name": "Binghamton Bearcats at Michigan Wolverines",
+    "shortName": "BING @ MICH",
+    "opponent": "Binghamton Bearcats",
+    "opponentAbbr": "BING",
+    "home": true,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401817385",
+    "date": "2025-11-22T01:00Z",
+    "name": "Michigan Wolverines at UConn Huskies",
+    "shortName": "MICH VS CONN",
+    "opponent": "UConn Huskies",
+    "opponentAbbr": "CONN",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401823663",
+    "date": "2025-11-23T17:00Z",
+    "name": "Syracuse Orange at Michigan Wolverines",
+    "shortName": "SYR VS MICH",
+    "opponent": "Syracuse Orange",
+    "opponentAbbr": "SYR",
+    "home": true,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401824763",
+    "date": "2025-11-26T22:00Z",
+    "name": "Michigan Wolverines at Detroit Mercy Titans",
+    "shortName": "MICH @ DETM",
+    "opponent": "Detroit Mercy Titans",
+    "opponentAbbr": "DETM",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401824221",
+    "date": "2025-12-04T00:00Z",
+    "name": "Central Michigan Chippewas at Michigan Wolverines",
+    "shortName": "CMU @ MICH",
+    "opponent": "Central Michigan Chippewas",
+    "opponentAbbr": "CMU",
+    "home": true,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401825225",
+    "date": "2025-12-07T17:00Z",
+    "name": "Purdue Boilermakers at Michigan Wolverines",
+    "shortName": "PUR @ MICH",
+    "opponent": "Purdue Boilermakers",
+    "opponentAbbr": "PUR",
+    "home": true,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401820856",
+    "date": "2025-12-13T17:00Z",
+    "name": "Akron Zips at Michigan Wolverines",
+    "shortName": "AKR @ MICH",
+    "opponent": "Akron Zips",
+    "opponentAbbr": "AKR",
+    "home": true,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401830362",
+    "date": "2025-12-21T17:00Z",
+    "name": "Oakland Golden Grizzlies at Michigan Wolverines",
+    "shortName": "OAK @ MICH",
+    "opponent": "Oakland Golden Grizzlies",
+    "opponentAbbr": "OAK",
+    "home": true,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401825232",
+    "date": "2025-12-30T02:00Z",
+    "name": "Michigan Wolverines at Oregon Ducks",
+    "shortName": "MICH @ ORE",
+    "opponent": "Oregon Ducks",
+    "opponentAbbr": "ORE",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401825240",
+    "date": "2026-01-01T23:00Z",
+    "name": "Michigan Wolverines at Washington Huskies",
+    "shortName": "MICH @ WASH",
+    "opponent": "Washington Huskies",
+    "opponentAbbr": "WASH",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401825252",
+    "date": "2026-01-05T23:30Z",
+    "name": "Minnesota Golden Gophers at Michigan Wolverines",
+    "shortName": "MINN @ MICH",
+    "opponent": "Minnesota Golden Gophers",
+    "opponentAbbr": "MINN",
+    "home": true,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401825257",
+    "date": "2026-01-08T23:00Z",
+    "name": "Michigan Wolverines at Penn State Lady Lions",
+    "shortName": "MICH @ PSU",
+    "opponent": "Penn State Lady Lions",
+    "opponentAbbr": "PSU",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401825266",
+    "date": "2026-01-11T19:00Z",
+    "name": "Wisconsin Badgers at Michigan Wolverines",
+    "shortName": "WIS @ MICH",
+    "opponent": "Wisconsin Badgers",
+    "opponentAbbr": "WIS",
+    "home": true,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401825273",
+    "date": "2026-01-16T00:00Z",
+    "name": "Illinois Fighting Illini at Michigan Wolverines",
+    "shortName": "ILL @ MICH",
+    "opponent": "Illinois Fighting Illini",
+    "opponentAbbr": "ILL",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401818615",
+    "date": "2026-01-19T19:30Z",
+    "name": "Michigan Wolverines at Vanderbilt Commodores",
+    "shortName": "MICH VS VAN",
+    "opponent": "Vanderbilt Commodores",
+    "opponentAbbr": "VAN",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401825291",
+    "date": "2026-01-22T23:00Z",
+    "name": "Michigan Wolverines at Rutgers Scarlet Knights",
+    "shortName": "MICH @ RUTG",
+    "opponent": "Rutgers Scarlet Knights",
+    "opponentAbbr": "RUTG",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401825299",
+    "date": "2026-01-25T19:00Z",
+    "name": "USC Trojans at Michigan Wolverines",
+    "shortName": "USC @ MICH",
+    "opponent": "USC Trojans",
+    "opponentAbbr": "USC",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401825307",
+    "date": "2026-01-30T00:00Z",
+    "name": "Michigan Wolverines at Indiana Hoosiers",
+    "shortName": "MICH @ IU",
+    "opponent": "Indiana Hoosiers",
+    "opponentAbbr": "IU",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401825313",
+    "date": "2026-02-01T17:00Z",
+    "name": "Michigan Wolverines at Michigan State Spartans",
+    "shortName": "MICH @ MSU",
+    "opponent": "Michigan State Spartans",
+    "opponentAbbr": "MSU",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401825321",
+    "date": "2026-02-05T00:00Z",
+    "name": "Nebraska Cornhuskers at Michigan Wolverines",
+    "shortName": "NEB @ MICH",
+    "opponent": "Nebraska Cornhuskers",
+    "opponentAbbr": "NEB",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401825332",
+    "date": "2026-02-08T20:00Z",
+    "name": "UCLA Bruins at Michigan Wolverines",
+    "shortName": "UCLA @ MICH",
+    "opponent": "UCLA Bruins",
+    "opponentAbbr": "UCLA",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401825339",
+    "date": "2026-02-13T02:00Z",
+    "name": "Michigan Wolverines at Northwestern Wildcats",
+    "shortName": "MICH @ NU",
+    "opponent": "Northwestern Wildcats",
+    "opponentAbbr": "NU",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401825345",
+    "date": "2026-02-15T21:00Z",
+    "name": "Michigan State Spartans at Michigan Wolverines",
+    "shortName": "MSU @ MICH",
+    "opponent": "Michigan State Spartans",
+    "opponentAbbr": "MSU",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401825359",
+    "date": "2026-02-22T05:00Z",
+    "name": "Michigan Wolverines at Iowa Hawkeyes",
+    "shortName": "MICH @ IOWA",
+    "opponent": "Iowa Hawkeyes",
+    "opponentAbbr": "IOWA",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401825367",
+    "date": "2026-02-26T01:00Z",
+    "name": "Michigan Wolverines at Ohio State Buckeyes",
+    "shortName": "MICH @ OSU",
+    "opponent": "Ohio State Buckeyes",
+    "opponentAbbr": "OSU",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401825372",
+    "date": "2026-02-28T19:30Z",
+    "name": "Maryland Terrapins at Michigan Wolverines",
+    "shortName": "MD @ MICH",
+    "opponent": "Maryland Terrapins",
+    "opponentAbbr": "MD",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  }
+]

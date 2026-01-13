@@ -41,6 +41,66 @@
       "league": "nhl",
       "color": "#CE1126",
       "pollDelay": 120
+    },
+    {
+      "id": "michigan-football",
+      "name": "Michigan Wolverines",
+      "displayName": "MICHIGAN",
+      "espnId": 130,
+      "sport": "football",
+      "league": "college-football",
+      "color": "#00274C",
+      "pollDelay": 180
+    },
+    {
+      "id": "michigan-mbb",
+      "name": "Michigan Wolverines MBB",
+      "displayName": "MICHIGAN",
+      "espnId": 130,
+      "sport": "basketball",
+      "league": "mens-college-basketball",
+      "color": "#00274C",
+      "pollDelay": 120
+    },
+    {
+      "id": "michigan-wbb",
+      "name": "Michigan Wolverines WBB",
+      "displayName": "MICHIGAN",
+      "espnId": 130,
+      "sport": "basketball",
+      "league": "womens-college-basketball",
+      "color": "#00274C",
+      "pollDelay": 120
+    },
+    {
+      "id": "msu-football",
+      "name": "Michigan State Spartans",
+      "displayName": "MICHIGAN ST",
+      "espnId": 127,
+      "sport": "football",
+      "league": "college-football",
+      "color": "#18453B",
+      "pollDelay": 180
+    },
+    {
+      "id": "msu-mbb",
+      "name": "Michigan State Spartans MBB",
+      "displayName": "MICHIGAN ST",
+      "espnId": 127,
+      "sport": "basketball",
+      "league": "mens-college-basketball",
+      "color": "#18453B",
+      "pollDelay": 120
+    },
+    {
+      "id": "msu-wbb",
+      "name": "Michigan State Spartans WBB",
+      "displayName": "MICHIGAN ST",
+      "espnId": 127,
+      "sport": "basketball",
+      "league": "womens-college-basketball",
+      "color": "#18453B",
+      "pollDelay": 120
     }
   ]
 }

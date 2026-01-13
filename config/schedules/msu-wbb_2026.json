@@ -1,0 +1,292 @@
+[
+  {
+    "eventId": "401825822",
+    "date": "2025-11-04T23:30Z",
+    "name": "Mercyhurst Lakers at Michigan State Spartans",
+    "shortName": "MERC @ MSU",
+    "opponent": "Mercyhurst Lakers",
+    "opponentAbbr": "MERC",
+    "home": true,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401825977",
+    "date": "2025-11-09T19:00Z",
+    "name": "Eastern Michigan Eagles at Michigan State Spartans",
+    "shortName": "EMU @ MSU",
+    "opponent": "Eastern Michigan Eagles",
+    "opponentAbbr": "EMU",
+    "home": true,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401825978",
+    "date": "2025-11-12T23:30Z",
+    "name": "Youngstown State Penguins at Michigan State Spartans",
+    "shortName": "YSU @ MSU",
+    "opponent": "Youngstown State Penguins",
+    "opponentAbbr": "YSU",
+    "home": true,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401825979",
+    "date": "2025-11-16T19:00Z",
+    "name": "Western Michigan Broncos at Michigan State Spartans",
+    "shortName": "WMU @ MSU",
+    "opponent": "Western Michigan Broncos",
+    "opponentAbbr": "WMU",
+    "home": true,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401825980",
+    "date": "2025-11-20T23:30Z",
+    "name": "Eastern Illinois Panthers at Michigan State Spartans",
+    "shortName": "EIU @ MSU",
+    "opponent": "Eastern Illinois Panthers",
+    "opponentAbbr": "EIU",
+    "home": true,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401825981",
+    "date": "2025-11-23T19:00Z",
+    "name": "Oakland Golden Grizzlies at Michigan State Spartans",
+    "shortName": "OAK @ MSU",
+    "opponent": "Oakland Golden Grizzlies",
+    "opponentAbbr": "OAK",
+    "home": true,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401824459",
+    "date": "2025-11-28T23:30Z",
+    "name": "Michigan State Spartans at Temple Owls",
+    "shortName": "MSU VS TEM",
+    "opponent": "Temple Owls",
+    "opponentAbbr": "TEM",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401824463",
+    "date": "2025-11-30T23:30Z",
+    "name": "Michigan State Spartans at Clemson Tigers",
+    "shortName": "MSU VS CLEM",
+    "opponent": "Clemson Tigers",
+    "opponentAbbr": "CLEM",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401825223",
+    "date": "2025-12-07T23:00Z",
+    "name": "Michigan State Spartans at Wisconsin Badgers",
+    "shortName": "MSU @ WIS",
+    "opponent": "Wisconsin Badgers",
+    "opponentAbbr": "WIS",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401822233",
+    "date": "2025-12-14T22:30Z",
+    "name": "Michigan State Spartans at DePaul Blue Demons",
+    "shortName": "MSU @ DEP",
+    "opponent": "DePaul Blue Demons",
+    "opponentAbbr": "DEP",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401825983",
+    "date": "2025-12-21T22:00Z",
+    "name": "Indiana State Sycamores at Michigan State Spartans",
+    "shortName": "INST VS MSU",
+    "opponent": "Indiana State Sycamores",
+    "opponentAbbr": "INST",
+    "home": true,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401831295",
+    "date": "2025-12-23T00:30Z",
+    "name": "Michigan State Spartans at Ole Miss Rebels",
+    "shortName": "MSU VS MISS",
+    "opponent": "Ole Miss Rebels",
+    "opponentAbbr": "MISS",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401825230",
+    "date": "2025-12-28T19:00Z",
+    "name": "Rutgers Scarlet Knights at Michigan State Spartans",
+    "shortName": "RUTG @ MSU",
+    "opponent": "Rutgers Scarlet Knights",
+    "opponentAbbr": "RUTG",
+    "home": true,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401825241",
+    "date": "2026-01-01T17:00Z",
+    "name": "Michigan State Spartans at Indiana Hoosiers",
+    "shortName": "MSU @ IU",
+    "opponent": "Indiana Hoosiers",
+    "opponentAbbr": "IU",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401825246",
+    "date": "2026-01-04T17:00Z",
+    "name": "Illinois Fighting Illini at Michigan State Spartans",
+    "shortName": "ILL @ MSU",
+    "opponent": "Illinois Fighting Illini",
+    "opponentAbbr": "ILL",
+    "home": true,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401825258",
+    "date": "2026-01-09T02:00Z",
+    "name": "Michigan State Spartans at Washington Huskies",
+    "shortName": "MSU @ WASH",
+    "opponent": "Washington Huskies",
+    "opponentAbbr": "WASH",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401825263",
+    "date": "2026-01-11T22:00Z",
+    "name": "Michigan State Spartans at Oregon Ducks",
+    "shortName": "MSU @ ORE",
+    "opponent": "Oregon Ducks",
+    "opponentAbbr": "ORE",
+    "home": false,
+    "status": "STATUS_FINAL"
+  },
+  {
+    "eventId": "401825275",
+    "date": "2026-01-16T00:00Z",
+    "name": "Nebraska Cornhuskers at Michigan State Spartans",
+    "shortName": "NEB @ MSU",
+    "opponent": "Nebraska Cornhuskers",
+    "opponentAbbr": "NEB",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401825279",
+    "date": "2026-01-19T01:00Z",
+    "name": "Michigan State Spartans at Iowa Hawkeyes",
+    "shortName": "MSU @ IOWA",
+    "opponent": "Iowa Hawkeyes",
+    "opponentAbbr": "IOWA",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401825292",
+    "date": "2026-01-23T01:00Z",
+    "name": "USC Trojans at Michigan State Spartans",
+    "shortName": "USC @ MSU",
+    "opponent": "USC Trojans",
+    "opponentAbbr": "USC",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401825309",
+    "date": "2026-01-29T23:00Z",
+    "name": "Michigan State Spartans at Purdue Boilermakers",
+    "shortName": "MSU @ PUR",
+    "opponent": "Purdue Boilermakers",
+    "opponentAbbr": "PUR",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401825313",
+    "date": "2026-02-01T17:00Z",
+    "name": "Michigan Wolverines at Michigan State Spartans",
+    "shortName": "MICH @ MSU",
+    "opponent": "Michigan Wolverines",
+    "opponentAbbr": "MICH",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401825320",
+    "date": "2026-02-04T23:30Z",
+    "name": "Maryland Terrapins at Michigan State Spartans",
+    "shortName": "MD @ MSU",
+    "opponent": "Maryland Terrapins",
+    "opponentAbbr": "MD",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401825328",
+    "date": "2026-02-07T18:00Z",
+    "name": "Michigan State Spartans at Penn State Lady Lions",
+    "shortName": "MSU @ PSU",
+    "opponent": "Penn State Lady Lions",
+    "opponentAbbr": "PSU",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401825336",
+    "date": "2026-02-12T01:00Z",
+    "name": "UCLA Bruins at Michigan State Spartans",
+    "shortName": "UCLA @ MSU",
+    "opponent": "UCLA Bruins",
+    "opponentAbbr": "UCLA",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401825345",
+    "date": "2026-02-15T21:00Z",
+    "name": "Michigan State Spartans at Michigan Wolverines",
+    "shortName": "MSU @ MICH",
+    "opponent": "Michigan Wolverines",
+    "opponentAbbr": "MICH",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401825351",
+    "date": "2026-02-18T23:30Z",
+    "name": "Northwestern Wildcats at Michigan State Spartans",
+    "shortName": "NU @ MSU",
+    "opponent": "Northwestern Wildcats",
+    "opponentAbbr": "NU",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401825360",
+    "date": "2026-02-22T23:00Z",
+    "name": "Michigan State Spartans at Minnesota Golden Gophers",
+    "shortName": "MSU @ MINN",
+    "opponent": "Minnesota Golden Gophers",
+    "opponentAbbr": "MINN",
+    "home": false,
+    "status": "STATUS_SCHEDULED"
+  },
+  {
+    "eventId": "401825377",
+    "date": "2026-03-01T17:00Z",
+    "name": "Ohio State Buckeyes at Michigan State Spartans",
+    "shortName": "OSU @ MSU",
+    "opponent": "Ohio State Buckeyes",
+    "opponentAbbr": "OSU",
+    "home": true,
+    "status": "STATUS_SCHEDULED"
+  }
+]

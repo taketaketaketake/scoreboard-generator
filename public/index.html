@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Primary Meta Tags -->
-  <title>Detroit Sports Schedule - Lions, Pistons, Tigers, Red Wings</title>
-  <meta name="title" content="Detroit Sports Schedule - Lions, Pistons, Tigers, Red Wings">
-  <meta name="description" content="Track upcoming Detroit sports games, schedules, and betting odds for the Lions, Pistons, Tigers, and Red Wings. Updated daily.">
-  <meta name="keywords" content="Detroit sports, Lions schedule, Pistons schedule, Tigers schedule, Red Wings schedule, Detroit games, sports odds">
+  <title>Michigan Sports Schedule - Detroit, U of M, Michigan State</title>
+  <meta name="title" content="Michigan Sports Schedule - Detroit, U of M, Michigan State">
+  <meta name="description" content="Track upcoming Michigan sports games, schedules, and betting odds for Detroit pro teams plus Michigan Wolverines and Michigan State Spartans. Updated daily.">
+  <meta name="keywords" content="Detroit sports, Michigan Wolverines, Michigan State Spartans, Lions schedule, Pistons schedule, Tigers schedule, Red Wings schedule, college football, college basketball">
   <meta name="author" content="Detroit Sports">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://scoreboard-generator.up.railway.app/">
@@ -20,15 +20,15 @@
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://scoreboard-generator.up.railway.app/">
-  <meta property="og:title" content="Detroit Sports Schedule - Lions, Pistons, Tigers, Red Wings">
-  <meta property="og:description" content="Track upcoming Detroit sports games, schedules, and betting odds. Updated daily.">
+  <meta property="og:title" content="Michigan Sports Schedule - Detroit, U of M, Michigan State">
+  <meta property="og:description" content="Track upcoming Michigan sports games and betting odds. Detroit pro teams plus Wolverines and Spartans. Updated daily.">
   <meta property="og:image" content="https://pub-d0714c2682ac4db6ba129c2044cd3629.r2.dev/whatup%20doe%20background.png">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://scoreboard-generator.up.railway.app/">
-  <meta property="twitter:title" content="Detroit Sports Schedule - Lions, Pistons, Tigers, Red Wings">
-  <meta property="twitter:description" content="Track upcoming Detroit sports games, schedules, and betting odds. Updated daily.">
+  <meta property="twitter:title" content="Michigan Sports Schedule - Detroit, U of M, Michigan State">
+  <meta property="twitter:description" content="Track upcoming Michigan sports games and betting odds. Detroit pro teams plus Wolverines and Spartans. Updated daily.">
   <meta property="twitter:image" content="https://pub-d0714c2682ac4db6ba129c2044cd3629.r2.dev/whatup%20doe%20background.png">
 
   <!-- Structured Data -->
@@ -36,8 +36,8 @@
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "Detroit Sports Schedule",
-    "description": "Track upcoming Detroit sports games for Lions, Pistons, Tigers, and Red Wings",
+    "name": "Michigan Sports Schedule",
+    "description": "Track upcoming Michigan sports games for Detroit pro teams, Michigan Wolverines, and Michigan State Spartans",
     "url": "https://scoreboard-generator.up.railway.app/",
     "potentialAction": {
       "@type": "SearchAction",
@@ -56,7 +56,9 @@
             lions: '#005A8B',
             pistons: '#C8102E',
             tigers: '#0C2340',
-            redwings: '#CE1126'
+            redwings: '#CE1126',
+            michigan: '#00274C',
+            msu: '#18453B'
           }
         }
       }
@@ -90,7 +92,7 @@
   <div class="max-w-4xl mx-auto px-4 py-8">
     <!-- Header -->
     <header class="text-center mb-10">
-      <h1 class="text-4xl font-bold mb-2">Detroit Sports</h1>
+      <h1 class="text-4xl font-bold mb-2">Michigan Sports</h1>
       <p class="text-gray-400">Upcoming Games</p>
     </header>
 
@@ -110,6 +112,12 @@
       </button>
       <button onclick="filterGames('redwings')" data-filter="redwings" class="filter-btn px-4 py-2 rounded-full bg-gray-700 hover:bg-redwings transition">
         Red Wings
+      </button>
+      <button onclick="filterGames('michigan')" data-filter="michigan" class="filter-btn px-4 py-2 rounded-full bg-gray-700 hover:bg-michigan transition">
+        Michigan
+      </button>
+      <button onclick="filterGames('msu')" data-filter="msu" class="filter-btn px-4 py-2 rounded-full bg-gray-700 hover:bg-msu transition">
+        Michigan St
       </button>
     </div>
 
@@ -134,14 +142,26 @@
       lions: '#005A8B',
       pistons: '#C8102E',
       tigers: '#0C2340',
-      redwings: '#CE1126'
+      redwings: '#CE1126',
+      'michigan-football': '#00274C',
+      'michigan-mbb': '#00274C',
+      'michigan-wbb': '#00274C',
+      'msu-football': '#18453B',
+      'msu-mbb': '#18453B',
+      'msu-wbb': '#18453B'
     };
 
     const teamLogos = {
       lions: '🦁',
       pistons: '🏀',
       tigers: '🐯',
-      redwings: '🏒'
+      redwings: '🏒',
+      'michigan-football': '〽️',
+      'michigan-mbb': '〽️',
+      'michigan-wbb': '〽️',
+      'msu-football': '⚔️',
+      'msu-mbb': '⚔️',
+      'msu-wbb': '⚔️'
     };
 
     async function fetchGames() {
@@ -256,6 +276,22 @@
       panel.innerHTML = html;
     }
 
+    // Map filter buttons to team IDs (for grouped filters like 'michigan' -> multiple teams)
+    const filterMap = {
+      michigan: ['michigan-football', 'michigan-mbb', 'michigan-wbb'],
+      msu: ['msu-football', 'msu-mbb', 'msu-wbb']
+    };
+
+    // Colors for filter buttons
+    const filterColors = {
+      lions: '#005A8B',
+      pistons: '#C8102E',
+      tigers: '#0C2340',
+      redwings: '#CE1126',
+      michigan: '#00274C',
+      msu: '#18453B'
+    };
+
     function filterGames(teamId) {
       currentFilter = teamId;
       expandedGame = null;
@@ -268,7 +304,7 @@
             btn.className = 'filter-btn px-4 py-2 rounded-full bg-white text-gray-900 font-medium transition';
           } else {
             btn.className = `filter-btn px-4 py-2 rounded-full text-white font-medium transition`;
-            btn.style.backgroundColor = teamColors[teamId];
+            btn.style.backgroundColor = filterColors[teamId];
           }
         } else {
           btn.className = 'filter-btn px-4 py-2 rounded-full bg-gray-700 hover:opacity-80 transition';
@@ -282,9 +318,16 @@
     function renderGames() {
       const container = document.getElementById('games-container');
 
-      const filtered = currentFilter === 'all'
-        ? allGames
-        : allGames.filter(g => g.team.id === currentFilter);
+      let filtered;
+      if (currentFilter === 'all') {
+        filtered = allGames;
+      } else if (filterMap[currentFilter]) {
+        // Grouped filter (michigan, msu) - match any of the team IDs
+        filtered = allGames.filter(g => filterMap[currentFilter].includes(g.team.id));
+      } else {
+        // Single team filter
+        filtered = allGames.filter(g => g.team.id === currentFilter);
+      }
 
       if (filtered.length === 0) {
         container.innerHTML = `
