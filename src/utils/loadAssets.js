@@ -109,3 +109,18 @@ export async function loadHeader() {
 
   return null;
 }
+
+/**
+ * Loads a team logo from R2.
+ * @param {string} league - The league (nfl, nba)
+ * @param {string} logoKey - The logo filename without extension
+ * @returns {Promise<Image|null>} - The loaded image or null if not found
+ */
+export async function loadLogo(league, logoKey) {
+  if (!logoKey) return null;
+
+  const folder = league === 'nfl' ? 'nfl-teams' : 'nba-teams';
+  const r2Path = `${folder}/${logoKey}.png`;
+
+  return await loadFromR2(r2Path);
+}

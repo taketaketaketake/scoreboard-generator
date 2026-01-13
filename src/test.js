@@ -12,12 +12,16 @@ const validPayload = {
   left: {
     team: "LIONS",
     score: 24,
-    color: "#005A8B"
+    color: "#005A8B",
+    league: "nfl",
+    logo: "detroit"
   },
   right: {
-    team: "PISTONS",
-    score: 112,
-    color: "#C8102E"
+    team: "BEARS",
+    score: 17,
+    color: "#0B162A",
+    league: "nfl",
+    logo: "chicago"
   },
   status: "FINAL",
   outputPath: join(OUTPUT_DIR, "test_game.png")

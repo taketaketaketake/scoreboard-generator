@@ -23,12 +23,16 @@ export function buildPayload(normalizedData, decision) {
     left: {
       team: ourTeam.name,
       score: ourTeam.score,
-      color: ourTeam.color
+      color: ourTeam.color,
+      league: ourTeam.league,
+      logo: ourTeam.logo
     },
     right: {
       team: opponent.name,
       score: opponent.score,
-      color: opponent.color
+      color: opponent.color,
+      league: opponent.league,
+      logo: opponent.logo
     },
     status: 'FINAL',
     outputPath: outputPath

@@ -7,7 +7,7 @@ import { COORDS } from "./config/coordinates.js";
 import { COLORS } from "./config/colors.js";
 
 import { validatePayload } from "./utils/validatePayload.js";
-import { registerFonts, loadBackground, loadFrame, loadHeader } from "./utils/loadAssets.js";
+import { registerFonts, loadBackground, loadFrame, loadHeader, loadLogo } from "./utils/loadAssets.js";
 import { drawTeamName, drawScore, drawStatus } from "./utils/text.js";
 
 /**
@@ -23,10 +23,12 @@ export async function generateScoreboard(payload) {
   registerFonts();
 
   // Step 3: Load optional assets
-  const [backgroundImage, frameImage, headerImage] = await Promise.all([
+  const [backgroundImage, frameImage, headerImage, leftLogo, rightLogo] = await Promise.all([
     loadBackground(payload.background),
     loadFrame(),
-    loadHeader()
+    loadHeader(),
+    loadLogo(payload.left.league, payload.left.logo),
+    loadLogo(payload.right.league, payload.right.logo)
   ]);
 
   // Step 4: Create canvas
@@ -72,16 +74,40 @@ export async function generateScoreboard(payload) {
     );
   }
 
-  // 5. Draw left team name
+  // 5. Draw left logo (if exists)
+  if (leftLogo) {
+    const size = COORDS.LEFT_LOGO.size;
+    ctx.drawImage(
+      leftLogo,
+      COORDS.LEFT_LOGO.x - size / 2,
+      COORDS.LEFT_LOGO.y,
+      size,
+      size
+    );
+  }
+
+  // 6. Draw right logo (if exists)
+  if (rightLogo) {
+    const size = COORDS.RIGHT_LOGO.size;
+    ctx.drawImage(
+      rightLogo,
+      COORDS.RIGHT_LOGO.x - size / 2,
+      COORDS.RIGHT_LOGO.y,
+      size,
+      size
+    );
+  }
+
+  // 7. Draw left team name
   drawTeamName(ctx, payload.left.team, COORDS.LEFT_TEAM_NAME.x, COORDS.LEFT_TEAM_NAME.y);
 
-  // 7. Draw right team name
+  // 8. Draw right team name
   drawTeamName(ctx, payload.right.team, COORDS.RIGHT_TEAM_NAME.x, COORDS.RIGHT_TEAM_NAME.y);
 
-  // 8. Draw left score
+  // 9. Draw left score
   drawScore(ctx, payload.left.score, COORDS.LEFT_SCORE.x, COORDS.LEFT_SCORE.y);
 
-  // 9. Draw right score
+  // 10. Draw right score
   drawScore(ctx, payload.right.score, COORDS.RIGHT_SCORE.x, COORDS.RIGHT_SCORE.y);
 
   // Note: Status bar and text are baked into the frame

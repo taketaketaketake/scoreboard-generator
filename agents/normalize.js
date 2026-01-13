@@ -78,7 +78,9 @@ export function normalizeGameData(scoreData, ourTeam) {
       name: ourTeam.displayName,
       score: ourScore,
       color: ourTeam.color,
-      isHome: isHome
+      isHome: isHome,
+      league: ourTeam.league,
+      logo: ourTeam.logo
     },
 
     // Opponent (always on right in output)
@@ -86,7 +88,9 @@ export function normalizeGameData(scoreData, ourTeam) {
       name: opponentInfo.displayName,
       score: theirScore,
       color: opponentInfo.color,
-      isHome: !isHome
+      isHome: !isHome,
+      league: ourTeam.league,
+      logo: opponentInfo.logo
     },
 
     // Game outcome

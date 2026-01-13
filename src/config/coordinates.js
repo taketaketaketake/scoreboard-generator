@@ -20,5 +20,9 @@ export const COORDS = {
 
   // Score positions (scaled and offset to match frame)
   LEFT_SCORE: { x: 336, y: 684 },   // 81 + 300*0.85, 250 + 510*0.85
-  RIGHT_SCORE: { x: 744, y: 684 }   // 81 + 780*0.85, 250 + 510*0.85
+  RIGHT_SCORE: { x: 744, y: 684 },  // 81 + 780*0.85, 250 + 510*0.85
+
+  // Logo positions (centered above team names)
+  LEFT_LOGO: { x: 336, y: 410, size: 120 },
+  RIGHT_LOGO: { x: 744, y: 410, size: 120 }
 };

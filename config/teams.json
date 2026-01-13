@@ -8,7 +8,8 @@
       "sport": "football",
       "league": "nfl",
       "color": "#005A8B",
-      "pollDelay": 150
+      "pollDelay": 150,
+      "logo": "detroit"
     },
     {
       "id": "pistons",
@@ -18,7 +19,8 @@
       "sport": "basketball",
       "league": "nba",
       "color": "#C8102E",
-      "pollDelay": 120
+      "pollDelay": 120,
+      "logo": "detroit"
     },
     {
       "id": "tigers",
