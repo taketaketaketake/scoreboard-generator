@@ -5,6 +5,8 @@
   "type": "module",
   "main": "src/index.js",
   "scripts": {
+    "setup": "node scripts/setup.js",
+    "postinstall": "node scripts/setup.js",
     "test": "node src/test.js",
     "test:pipeline": "node test-pipeline.js",
     "generate": "node src/index.js",
