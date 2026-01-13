@@ -164,3 +164,9 @@ npm run test:pipeline  # Test all pipeline agents
 npm run fetch:schedules # Fetch all team schedules
 npm run check:today    # Check for today's games
 ```
+
+## API Reference
+
+ESPN Public API documentation: https://github.com/pseudo-r/Public-ESPN-API
+
+This project uses ESPN's undocumented public API for schedules, scores, and odds.
