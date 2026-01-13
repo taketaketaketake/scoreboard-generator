@@ -4,6 +4,8 @@
  */
 
 import express from 'express';
+import helmet from 'helmet';
+import rateLimit from 'express-rate-limit';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 import { getUpcomingGames, getTodaysGames } from './agents/schedule.js';
@@ -13,12 +15,34 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+// Security headers
+app.use(helmet({
+  contentSecurityPolicy: {
+    directives: {
+      defaultSrc: ["'self'"],
+      scriptSrc: ["'self'", "'unsafe-inline'", "https://cdn.tailwindcss.com"],
+      styleSrc: ["'self'", "'unsafe-inline'"],
+      imgSrc: ["'self'", "data:"],
+    },
+  },
+}));
+
+// Rate limiting for API routes
+const apiLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: 100, // 100 requests per window per IP
+  message: { error: 'Too many requests, please try again later' },
+  standardHeaders: true,
+  legacyHeaders: false,
+});
+app.use('/api', apiLimiter);
+
 // Serve static files
 app.use(express.static(join(__dirname, 'public')));
 
 // API: Get upcoming games
 app.get('/api/upcoming', (req, res) => {
-  const days = parseInt(req.query.days) || 7;
+  const days = Math.min(Math.max(parseInt(req.query.days) || 7, 1), 30);
   const games = getUpcomingGames(days);
   res.json(games);
 });
@@ -31,7 +55,11 @@ app.get('/api/today', (req, res) => {
 
 // API: Get odds for a game
 app.get('/api/odds/:eventId', (req, res) => {
-  const odds = getOdds(req.params.eventId);
+  const eventId = req.params.eventId.replace(/[^a-zA-Z0-9]/g, '');
+  if (!eventId) {
+    return res.status(400).json({ error: 'Invalid event ID' });
+  }
+  const odds = getOdds(eventId);
   res.json(odds || { message: 'No odds available' });
 });
 
