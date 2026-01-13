@@ -131,7 +131,7 @@ export function validateConfig() {
 }
 
 // CLI: Test sending a message
-if (process.argv[1].includes('twilio.js')) {
+if (process.argv[1] && process.argv[1].includes('twilio.js')) {
   const validation = validateConfig();
   if (!validation.valid) {
     console.log('Twilio configuration issues:');
