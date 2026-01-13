@@ -4,6 +4,7 @@
  * Runs cron jobs for scheduling and monitoring games
  */
 
+import 'dotenv/config';
 import cron from 'node-cron';
 import { runDailyJob, refreshSchedulesAndOdds, printUpcomingGames } from './jobs/daily.js';
 import { runPregameJob } from './jobs/pregame.js';

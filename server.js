@@ -3,6 +3,7 @@
  * Serves the dashboard and API endpoints
  */
 
+import 'dotenv/config';
 import express from 'express';
 import helmet from 'helmet';
 import rateLimit from 'express-rate-limit';
@@ -40,6 +41,9 @@ app.use('/api', apiLimiter);
 
 // Serve static files
 app.use(express.static(join(__dirname, 'public')));
+
+// Serve generated scoreboard images
+app.use('/output', express.static(join(__dirname, 'output')));
 
 // API: Get upcoming games
 app.get('/api/upcoming', (req, res) => {

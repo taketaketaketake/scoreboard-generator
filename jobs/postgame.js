@@ -9,8 +9,9 @@ import { analyzeGame, shouldGenerate } from '../agents/decision.js';
 import { buildPayload, buildExtendedPayload } from '../agents/content.js';
 import { getOdds } from '../agents/odds.js';
 import { generateScoreboard } from '../src/index.js';
+import { sendScoreboardImage, validateConfig as validateTwilioConfig } from '../agents/twilio.js';
 import { writeFileSync, mkdirSync } from 'fs';
-import { dirname, join } from 'path';
+import { dirname, join, basename } from 'path';
 import { fileURLToPath } from 'url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -109,6 +110,34 @@ export async function runPostgameJob(game, options = {}) {
     const result = await generateScoreboard(payload);
     console.log(`✓ Image generated: ${result.path}`);
 
+    // Send via Twilio if configured
+    let twilioResult = null;
+    const twilioValidation = validateTwilioConfig();
+    const imageBaseUrl = process.env.IMAGE_BASE_URL;
+
+    if (twilioValidation.valid && imageBaseUrl) {
+      try {
+        // Construct public URL from base URL and filename
+        const filename = basename(result.path);
+        const dateFolder = result.path.match(/output[\\\/](\d{4}-\d{2}-\d{2})/)?.[1] || '';
+        const publicUrl = dateFolder
+          ? `${imageBaseUrl}/${dateFolder}/${filename}`
+          : `${imageBaseUrl}/${filename}`;
+
+        const scoreMessage = `${normalized.ourTeam.name} ${normalized.ourTeam.score} - ${normalized.opponent.name} ${normalized.opponent.score} | ${decision.isWin ? 'WIN' : 'LOSS'}`;
+
+        console.log('\nSending scoreboard via Twilio...');
+        twilioResult = await sendScoreboardImage(publicUrl, scoreMessage);
+        console.log(`✓ MMS sent to ${twilioResult.to}`);
+      } catch (error) {
+        console.error(`⚠ Failed to send via Twilio: ${error.message}`);
+      }
+    } else if (!twilioValidation.valid) {
+      console.log('\nTwilio not configured, skipping MMS');
+    } else if (!imageBaseUrl) {
+      console.log('\nIMAGE_BASE_URL not set, skipping MMS');
+    }
+
     // Store game record
     const extendedPayload = buildExtendedPayload(normalized, decision, odds);
     storeGameRecord(game.eventId, {
@@ -124,7 +153,8 @@ export async function runPostgameJob(game, options = {}) {
       path: result.path,
       eventId: game.eventId,
       score: `${normalized.ourTeam.name} ${normalized.ourTeam.score} - ${normalized.opponent.name} ${normalized.opponent.score}`,
-      isWin: decision.isWin
+      isWin: decision.isWin,
+      twilioSent: twilioResult?.success || false
     };
 
   } catch (error) {
