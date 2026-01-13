@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://scoreboard-generator.up.railway.app/sitemap.xml
