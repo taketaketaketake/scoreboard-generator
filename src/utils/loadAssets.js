@@ -6,6 +6,9 @@ import { fileURLToPath } from "url";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ASSETS_DIR = join(__dirname, "..", "..", "assets");
 
+// Cloudflare R2 public bucket
+const R2_BASE_URL = "https://pub-d0714c2682ac4db6ba129c2044cd3629.r2.dev";
+
 let fontsRegistered = false;
 
 /**
@@ -31,13 +34,36 @@ export function registerFonts() {
 }
 
 /**
+ * Load image from R2 URL with local fallback
+ * @param {string} r2Path - Path on R2 (e.g., "background.png")
+ * @param {string} localPath - Local file path fallback
+ * @returns {Promise<Image|null>}
+ */
+async function loadFromR2(r2Path, localPath = null) {
+  try {
+    const url = `${R2_BASE_URL}/${encodeURIComponent(r2Path).replace(/%2F/g, '/')}`;
+    return await loadImage(url);
+  } catch (err) {
+    console.log(`R2 load failed for ${r2Path}, trying local fallback...`);
+    if (localPath && existsSync(localPath)) {
+      return await loadImage(localPath);
+    }
+    return null;
+  }
+}
+
+/**
  * Loads a background image by name.
  * @param {string} name - Background name (without extension)
  * @returns {Promise<Image|null>} - The loaded image or null if not found
  */
 export async function loadBackground(name) {
-  const extensions = [".png", ".jpg", ".jpeg"];
+  // Try R2 first
+  const r2Image = await loadFromR2(`${name}.png`);
+  if (r2Image) return r2Image;
 
+  // Fallback to local
+  const extensions = [".png", ".jpg", ".jpeg"];
   for (const ext of extensions) {
     const imagePath = join(ASSETS_DIR, "backgrounds", `${name}${ext}`);
     if (existsSync(imagePath)) {
@@ -45,7 +71,6 @@ export async function loadBackground(name) {
     }
   }
 
-  // Background not found - return null (will use solid color fallback)
   return null;
 }
 
@@ -54,14 +79,17 @@ export async function loadBackground(name) {
  * @returns {Promise<Image|null>} - The loaded image or null if not found
  */
 export async function loadFrame() {
-  const framePath = join(ASSETS_DIR, "frames", "frame transparent.png");
+  // Try R2 first
+  const r2Image = await loadFromR2("frame_transparent.png");
+  if (r2Image) return r2Image;
 
-  if (!existsSync(framePath)) {
-    // Frame not found - return null (will skip overlay)
-    return null;
+  // Fallback to local
+  const framePath = join(ASSETS_DIR, "frames", "frame transparent.png");
+  if (existsSync(framePath)) {
+    return await loadImage(framePath);
   }
 
-  return await loadImage(framePath);
+  return null;
 }
 
 /**
@@ -69,11 +97,15 @@ export async function loadFrame() {
  * @returns {Promise<Image|null>} - The loaded image or null if not found
  */
 export async function loadHeader() {
-  const headerPath = join(ASSETS_DIR, "header", "header_transparent.png");
+  // Try R2 first
+  const r2Image = await loadFromR2("header_transparent.png");
+  if (r2Image) return r2Image;
 
-  if (!existsSync(headerPath)) {
-    return null;
+  // Fallback to local
+  const headerPath = join(ASSETS_DIR, "header", "header_transparent.png");
+  if (existsSync(headerPath)) {
+    return await loadImage(headerPath);
   }
 
-  return await loadImage(headerPath);
+  return null;
 }
