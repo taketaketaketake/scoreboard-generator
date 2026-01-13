@@ -1,0 +1,5 @@
+export const CANVAS = {
+  WIDTH: 1080,
+  HEIGHT: 1080,
+  BACKGROUND_COLOR: "#000000"
+};

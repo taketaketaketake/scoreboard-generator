@@ -1,0 +1,5 @@
+export const COLORS = {
+  STATUS_BAR_BG: "#F2C94C",
+  STATUS_BAR_TEXT: "#000000",
+  DEFAULT_TEXT: "#FFFFFF"
+};

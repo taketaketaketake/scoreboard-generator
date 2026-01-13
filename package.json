@@ -1,0 +1,20 @@
+{
+  "name": "scoreboard-generator",
+  "version": "1.0.0",
+  "description": "Headless scoreboard image generator using node-canvas",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node src/test.js",
+    "generate": "node src/index.js"
+  },
+  "keywords": [
+    "scoreboard",
+    "canvas",
+    "image-generator"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@napi-rs/canvas": "^0.1.65"
+  }
+}
