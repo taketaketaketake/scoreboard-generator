@@ -50,7 +50,8 @@
       "sport": "football",
       "league": "college-football",
       "color": "#00274C",
-      "pollDelay": 180
+      "pollDelay": 180,
+      "logo": "michigan"
     },
     {
       "id": "michigan-mbb",
@@ -60,7 +61,8 @@
       "sport": "basketball",
       "league": "mens-college-basketball",
       "color": "#00274C",
-      "pollDelay": 120
+      "pollDelay": 120,
+      "logo": "michigan"
     },
     {
       "id": "michigan-wbb",
@@ -70,7 +72,8 @@
       "sport": "basketball",
       "league": "womens-college-basketball",
       "color": "#00274C",
-      "pollDelay": 120
+      "pollDelay": 120,
+      "logo": "michigan"
     },
     {
       "id": "msu-football",
@@ -80,7 +83,8 @@
       "sport": "football",
       "league": "college-football",
       "color": "#18453B",
-      "pollDelay": 180
+      "pollDelay": 180,
+      "logo": "michigan-state"
     },
     {
       "id": "msu-mbb",
@@ -90,7 +94,8 @@
       "sport": "basketball",
       "league": "mens-college-basketball",
       "color": "#18453B",
-      "pollDelay": 120
+      "pollDelay": 120,
+      "logo": "michigan-state"
     },
     {
       "id": "msu-wbb",
@@ -100,7 +105,8 @@
       "sport": "basketball",
       "league": "womens-college-basketball",
       "color": "#18453B",
-      "pollDelay": 120
+      "pollDelay": 120,
+      "logo": "michigan-state"
     }
   ]
 }

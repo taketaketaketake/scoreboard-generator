@@ -112,14 +112,24 @@ export async function loadHeader() {
 
 /**
  * Loads a team logo from R2.
- * @param {string} league - The league (nfl, nba)
+ * @param {string} league - The league (nfl, nba, college-football, mens-college-basketball, womens-college-basketball)
  * @param {string} logoKey - The logo filename without extension
  * @returns {Promise<Image|null>} - The loaded image or null if not found
  */
 export async function loadLogo(league, logoKey) {
   if (!logoKey) return null;
 
-  const folder = league === 'nfl' ? 'nfl-teams' : 'nba-teams';
+  let folder;
+  if (league === 'nfl') {
+    folder = 'nfl-teams';
+  } else if (league === 'nba') {
+    folder = 'nba-teams';
+  } else if (league === 'college-football' || league === 'mens-college-basketball' || league === 'womens-college-basketball') {
+    folder = 'ncaa';
+  } else {
+    folder = 'nba-teams'; // fallback
+  }
+
   const r2Path = `${folder}/${logoKey}.png`;
 
   return await loadFromR2(r2Path);
