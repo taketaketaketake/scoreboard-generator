@@ -7,6 +7,7 @@ import express from 'express';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 import { getUpcomingGames, getTodaysGames } from './agents/schedule.js';
+import { getOdds } from './agents/odds.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express();
@@ -26,6 +27,12 @@ app.get('/api/upcoming', (req, res) => {
 app.get('/api/today', (req, res) => {
   const games = getTodaysGames();
   res.json(games);
+});
+
+// API: Get odds for a game
+app.get('/api/odds/:eventId', (req, res) => {
+  const odds = getOdds(req.params.eventId);
+  res.json(odds || { message: 'No odds available' });
 });
 
 // Health check

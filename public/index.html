@@ -19,6 +19,28 @@
       }
     }
   </script>
+  <style>
+    .odds-panel {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+    }
+    .odds-panel.open {
+      max-height: 200px;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+    .game-card {
+      cursor: pointer;
+      transition: transform 0.15s ease;
+    }
+    .game-card:hover {
+      transform: scale(1.01);
+    }
+    .game-card.expanded {
+      border-radius: 0.75rem 0.75rem 0 0;
+    }
+  </style>
 </head>
 <body class="bg-gray-900 text-white min-h-screen">
   <div class="max-w-4xl mx-auto px-4 py-8">
@@ -54,13 +76,15 @@
 
     <!-- Footer -->
     <footer class="text-center mt-12 text-gray-500 text-sm">
-      Data from ESPN • Updated automatically
+      Data from ESPN • Click a game for odds
     </footer>
   </div>
 
   <script>
     let allGames = [];
     let currentFilter = 'all';
+    let expandedGame = null;
+    let oddsCache = {};
 
     const teamColors = {
       lions: '#005A8B',
@@ -88,8 +112,109 @@
       }
     }
 
+    async function toggleOdds(eventId) {
+      const panel = document.getElementById(`odds-${eventId}`);
+      const card = document.getElementById(`card-${eventId}`);
+
+      // Close previously expanded
+      if (expandedGame && expandedGame !== eventId) {
+        const prevPanel = document.getElementById(`odds-${expandedGame}`);
+        const prevCard = document.getElementById(`card-${expandedGame}`);
+        if (prevPanel) prevPanel.classList.remove('open');
+        if (prevCard) prevCard.classList.remove('expanded');
+      }
+
+      // Toggle current
+      if (expandedGame === eventId) {
+        panel.classList.remove('open');
+        card.classList.remove('expanded');
+        expandedGame = null;
+        return;
+      }
+
+      expandedGame = eventId;
+      card.classList.add('expanded');
+      panel.classList.add('open');
+
+      // Show loading
+      panel.innerHTML = `
+        <div class="text-center text-gray-400">
+          <span class="inline-block animate-pulse">Loading odds...</span>
+        </div>
+      `;
+
+      // Fetch odds if not cached
+      if (!oddsCache[eventId]) {
+        try {
+          const res = await fetch(`/api/odds/${eventId}`);
+          oddsCache[eventId] = await res.json();
+        } catch (err) {
+          oddsCache[eventId] = { error: true };
+        }
+      }
+
+      // Render odds
+      const odds = oddsCache[eventId];
+
+      if (odds.error || odds.message) {
+        panel.innerHTML = `
+          <div class="text-center text-gray-500 text-sm">
+            No odds available for this game
+          </div>
+        `;
+        return;
+      }
+
+      let html = '<div class="grid grid-cols-2 gap-4">';
+
+      // Opening odds
+      if (odds.opening) {
+        html += `
+          <div class="bg-gray-900 rounded-lg p-3">
+            <div class="text-xs text-gray-500 uppercase mb-2">Opening Line</div>
+            <div class="space-y-1">
+              ${odds.opening.spread ? `<div class="flex justify-between"><span class="text-gray-400">Spread</span><span class="font-mono">${odds.opening.spread}</span></div>` : ''}
+              ${odds.opening.overUnder ? `<div class="flex justify-between"><span class="text-gray-400">O/U</span><span class="font-mono">${odds.opening.overUnder}</span></div>` : ''}
+              ${odds.opening.moneyLine ? `<div class="flex justify-between"><span class="text-gray-400">ML</span><span class="font-mono">${odds.opening.moneyLine}</span></div>` : ''}
+            </div>
+            <div class="text-xs text-gray-600 mt-2">${odds.opening.provider || ''}</div>
+          </div>
+        `;
+      }
+
+      // Closing odds
+      if (odds.closing) {
+        html += `
+          <div class="bg-gray-900 rounded-lg p-3">
+            <div class="text-xs text-gray-500 uppercase mb-2">Closing Line</div>
+            <div class="space-y-1">
+              ${odds.closing.spread ? `<div class="flex justify-between"><span class="text-gray-400">Spread</span><span class="font-mono">${odds.closing.spread}</span></div>` : ''}
+              ${odds.closing.overUnder ? `<div class="flex justify-between"><span class="text-gray-400">O/U</span><span class="font-mono">${odds.closing.overUnder}</span></div>` : ''}
+              ${odds.closing.moneyLine ? `<div class="flex justify-between"><span class="text-gray-400">ML</span><span class="font-mono">${odds.closing.moneyLine}</span></div>` : ''}
+            </div>
+            <div class="text-xs text-gray-600 mt-2">${odds.closing.provider || ''}</div>
+          </div>
+        `;
+      }
+
+      // If only one type, show single column
+      if (!odds.opening && !odds.closing) {
+        html = `
+          <div class="text-center text-gray-500 text-sm">
+            No odds available for this game
+          </div>
+        `;
+      } else if (!odds.opening || !odds.closing) {
+        html += '<div></div>'; // Empty grid cell
+      }
+
+      html += '</div>';
+      panel.innerHTML = html;
+    }
+
     function filterGames(teamId) {
       currentFilter = teamId;
+      expandedGame = null;
 
       // Update button styles
       document.querySelectorAll('.filter-btn').forEach(btn => {
@@ -151,17 +276,28 @@
           const logo = teamLogos[game.team.id];
 
           html += `
-            <div class="bg-gray-800 rounded-xl p-4 flex items-center gap-4 border-l-4" style="border-color: ${teamColor}">
-              <div class="text-3xl">${logo}</div>
-              <div class="flex-1">
-                <div class="font-semibold">${game.team.name}</div>
-                <div class="text-gray-400 text-sm">vs ${game.opponent}</div>
-              </div>
-              <div class="text-right">
-                <div class="font-medium">${time}</div>
-                <div class="text-xs px-2 py-1 rounded ${game.home ? 'bg-green-900 text-green-300' : 'bg-gray-700 text-gray-300'}">
-                  ${game.home ? 'HOME' : 'AWAY'}
+            <div class="overflow-hidden rounded-xl">
+              <div id="card-${game.eventId}" onclick="toggleOdds('${game.eventId}')"
+                   class="game-card bg-gray-800 p-4 flex items-center gap-4 border-l-4 rounded-xl"
+                   style="border-color: ${teamColor}">
+                <div class="text-3xl">${logo}</div>
+                <div class="flex-1">
+                  <div class="font-semibold">${game.team.name}</div>
+                  <div class="text-gray-400 text-sm">vs ${game.opponent}</div>
                 </div>
+                <div class="text-right">
+                  <div class="font-medium">${time}</div>
+                  <div class="text-xs px-2 py-1 rounded ${game.home ? 'bg-green-900 text-green-300' : 'bg-gray-700 text-gray-300'}">
+                    ${game.home ? 'HOME' : 'AWAY'}
+                  </div>
+                </div>
+                <div class="text-gray-500">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </div>
+              </div>
+              <div id="odds-${game.eventId}" class="odds-panel bg-gray-800 border-l-4 px-4" style="border-color: ${teamColor}">
               </div>
             </div>
           `;
