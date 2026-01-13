@@ -6,8 +6,12 @@ export const COORDS = {
     y: 250      // lowered scoreboard position
   },
 
-  // Header position (independent of frame, absolute Y)
-  HEADER: { y: -210 },
+  // Header position and scale (10% smaller than frame)
+  HEADER: {
+    scale: 0.765,  // 0.85 * 0.9 = 10% smaller than frame
+    x: 127,        // (1080 - 1080*0.765) / 2 = centered
+    y: -180
+  },
 
   // Team name positions (scaled and offset to match frame)
   // Formula: FRAME.x + originalX * scale, FRAME.y + originalY * scale

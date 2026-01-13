@@ -59,14 +59,16 @@ export async function generateScoreboard(payload) {
     );
   }
 
-  // 4. Draw header (if exists) - scaled, independent Y position
+  // 4. Draw header (if exists) - independent scale and position
   if (headerImage) {
+    const headerWidth = CANVAS.WIDTH * COORDS.HEADER.scale;
+    const headerHeight = CANVAS.HEIGHT * COORDS.HEADER.scale;
     ctx.drawImage(
       headerImage,
-      COORDS.FRAME.x,
+      COORDS.HEADER.x,
       COORDS.HEADER.y,
-      scaledWidth,
-      scaledHeight
+      headerWidth,
+      headerHeight
     );
   }
 
