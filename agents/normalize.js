@@ -51,8 +51,10 @@ export function getOpponentInfo(abbreviation, league) {
  * @returns {object} - Normalized game data
  */
 export function normalizeGameData(scoreData, ourTeam) {
-  // Determine which side is our team
-  const isHome = scoreData.home.abbreviation === ourTeam.displayName ||
+  // Determine which side is our team (check multiple identifiers)
+  const isHome = scoreData.home.id == ourTeam.espnId ||
+                 scoreData.home.abbreviation === ourTeam.displayName ||
+                 scoreData.home.abbreviation === (ourTeam.abbreviation || '') ||
                  scoreData.home.abbreviation === 'DET';
 
   const ourSide = isHome ? scoreData.home : scoreData.away;

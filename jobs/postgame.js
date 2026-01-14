@@ -10,6 +10,7 @@ import { buildPayload, buildExtendedPayload } from '../agents/content.js';
 import { getOdds } from '../agents/odds.js';
 import { generateScoreboard } from '../src/index.js';
 import { sendScoreboardImage, validateConfig as validateTwilioConfig } from '../agents/twilio.js';
+import { uploadScoreboard, validateR2Config } from '../agents/r2.js';
 import { writeFileSync, mkdirSync } from 'fs';
 import { dirname, join, basename } from 'path';
 import { fileURLToPath } from 'url';
@@ -110,32 +111,32 @@ export async function runPostgameJob(game, options = {}) {
     const result = await generateScoreboard(payload);
     console.log(`✓ Image generated: ${result.path}`);
 
-    // Send via Twilio if configured
+    // Upload to R2 and send via Twilio if configured
     let twilioResult = null;
     const twilioValidation = validateTwilioConfig();
-    const imageBaseUrl = process.env.IMAGE_BASE_URL;
+    const r2Validation = validateR2Config();
 
-    if (twilioValidation.valid && imageBaseUrl) {
+    if (twilioValidation.valid && r2Validation.valid) {
       try {
-        // Construct public URL from base URL and filename
-        const filename = basename(result.path);
-        const dateFolder = result.path.match(/output[\\\/](\d{4}-\d{2}-\d{2})/)?.[1] || '';
-        const publicUrl = dateFolder
-          ? `${imageBaseUrl}/${dateFolder}/${filename}`
-          : `${imageBaseUrl}/${filename}`;
+        // Upload to R2 first
+        console.log('\nUploading scoreboard to R2...');
+        const uploadResult = await uploadScoreboard(result.path);
+        console.log(`✓ Uploaded to: ${uploadResult.publicUrl}`);
 
+        // Send via Twilio with R2 URL
         const scoreMessage = `${normalized.ourTeam.name} ${normalized.ourTeam.score} - ${normalized.opponent.name} ${normalized.opponent.score} | ${decision.isWin ? 'WIN' : 'LOSS'}`;
 
         console.log('\nSending scoreboard via Twilio...');
-        twilioResult = await sendScoreboardImage(publicUrl, scoreMessage);
+        twilioResult = await sendScoreboardImage(uploadResult.publicUrl, scoreMessage);
         console.log(`✓ MMS sent to ${twilioResult.to}`);
       } catch (error) {
-        console.error(`⚠ Failed to send via Twilio: ${error.message}`);
+        console.error(`⚠ Failed to upload/send: ${error.message}`);
       }
+    } else if (!r2Validation.valid) {
+      console.log('\nR2 not configured, skipping upload and MMS');
+      console.log('Missing:', r2Validation.issues.join(', '));
     } else if (!twilioValidation.valid) {
       console.log('\nTwilio not configured, skipping MMS');
-    } else if (!imageBaseUrl) {
-      console.log('\nIMAGE_BASE_URL not set, skipping MMS');
     }
 
     // Store game record
