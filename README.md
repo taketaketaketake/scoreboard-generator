@@ -1,4 +1,5 @@
 # Scoreboard Generator
+<img width="2752" height="1536" alt="how-it-works-scoreboard-generator" src="https://github.com/user-attachments/assets/090ae7b3-4a4e-4742-81e9-9d166627731c" />
 
 Headless Node.js image generator for sports scoreboards with automated Detroit sports pipeline.
 
