@@ -7,6 +7,33 @@ import { S3Client, PutObjectCommand } from '@aws-sdk/client-s3';
 import { readFileSync } from 'fs';
 import { basename } from 'path';
 
+/**
+ * Verify a URL is accessible via HTTP HEAD request
+ * @param {string} url - URL to verify
+ * @param {number} maxRetries - Maximum retry attempts
+ * @param {number} retryDelay - Delay between retries in ms
+ * @returns {Promise<boolean>} - True if accessible
+ */
+export async function verifyUrlAccessible(url, maxRetries = 5, retryDelay = 2000) {
+  for (let attempt = 1; attempt <= maxRetries; attempt++) {
+    try {
+      const response = await fetch(url, { method: 'HEAD' });
+      if (response.ok) {
+        console.log(`✓ URL verified accessible (attempt ${attempt}/${maxRetries})`);
+        return true;
+      }
+      console.log(`URL not accessible yet (${response.status}), attempt ${attempt}/${maxRetries}`);
+    } catch (error) {
+      console.log(`URL check failed (${error.message}), attempt ${attempt}/${maxRetries}`);
+    }
+
+    if (attempt < maxRetries) {
+      await new Promise(resolve => setTimeout(resolve, retryDelay));
+    }
+  }
+  return false;
+}
+
 // R2 configuration from environment
 const R2_ACCESS_KEY_ID = process.env.R2_ACCESS_KEY_ID;
 const R2_SECRET_ACCESS_KEY = process.env.R2_SECRET_ACCESS_KEY;
@@ -95,6 +122,35 @@ export async function uploadScoreboard(localPath) {
   }
 
   return await uploadToR2(localPath, r2Key);
+}
+
+/**
+ * Upload a scoreboard image to R2 and verify it's accessible
+ * @param {string} localPath - Local path to generated image
+ * @param {object} options - Verification options
+ * @param {number} options.maxRetries - Max verification attempts (default: 5)
+ * @param {number} options.retryDelay - Delay between retries in ms (default: 2000)
+ * @returns {Promise<object>} - Upload result with public URL and verification status
+ * @throws {Error} - If upload succeeds but verification fails
+ */
+export async function uploadScoreboardVerified(localPath, options = {}) {
+  const { maxRetries = 5, retryDelay = 2000 } = options;
+
+  // Upload first
+  const uploadResult = await uploadScoreboard(localPath);
+
+  // Verify the URL is accessible
+  console.log('Verifying image is accessible...');
+  const isAccessible = await verifyUrlAccessible(uploadResult.publicUrl, maxRetries, retryDelay);
+
+  if (!isAccessible) {
+    throw new Error(`Image uploaded but not accessible after ${maxRetries} attempts: ${uploadResult.publicUrl}`);
+  }
+
+  return {
+    ...uploadResult,
+    verified: true,
+  };
 }
 
 /**

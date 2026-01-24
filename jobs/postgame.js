@@ -10,7 +10,7 @@ import { buildPayload, buildExtendedPayload } from '../agents/content.js';
 import { getOdds } from '../agents/odds.js';
 import { generateScoreboard } from '../src/index.js';
 import { sendScoreboardImage, validateConfig as validateTwilioConfig } from '../agents/twilio.js';
-import { uploadScoreboard, validateR2Config } from '../agents/r2.js';
+import { uploadScoreboardVerified, validateR2Config } from '../agents/r2.js';
 import { writeFileSync, mkdirSync } from 'fs';
 import { dirname, join, basename } from 'path';
 import { fileURLToPath } from 'url';
@@ -118,10 +118,10 @@ export async function runPostgameJob(game, options = {}) {
 
     if (twilioValidation.valid && r2Validation.valid) {
       try {
-        // Upload to R2 first
+        // Upload to R2 and verify it's accessible before sending MMS
         console.log('\nUploading scoreboard to R2...');
-        const uploadResult = await uploadScoreboard(result.path);
-        console.log(`✓ Uploaded to: ${uploadResult.publicUrl}`);
+        const uploadResult = await uploadScoreboardVerified(result.path);
+        console.log(`✓ Uploaded and verified: ${uploadResult.publicUrl}`);
 
         // Send via Twilio with R2 URL
         const scoreMessage = `${normalized.ourTeam.name} ${normalized.ourTeam.score} - ${normalized.opponent.name} ${normalized.opponent.score} | ${decision.isWin ? 'WIN' : 'LOSS'}`;
