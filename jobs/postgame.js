@@ -124,7 +124,8 @@ export async function runPostgameJob(game, options = {}) {
         console.log(`✓ Uploaded and verified: ${uploadResult.publicUrl}`);
 
         // Send via Twilio with R2 URL
-        const scoreMessage = `${normalized.ourTeam.name} ${normalized.ourTeam.score} - ${normalized.opponent.name} ${normalized.opponent.score} | ${decision.isWin ? 'WIN' : 'LOSS'}`;
+        const gameDate = new Date(normalized.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+        const scoreMessage = `${normalized.ourTeam.name} ${normalized.ourTeam.score} - ${normalized.opponent.name} ${normalized.opponent.score} | ${decision.isWin ? 'WIN' : 'LOSS'} | ${gameDate}`;
 
         console.log('\nSending scoreboard via Twilio...');
         twilioResult = await sendScoreboardImage(uploadResult.publicUrl, scoreMessage);
