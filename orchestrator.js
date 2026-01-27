@@ -68,19 +68,11 @@ async function runDailyCheck() {
 }
 
 /**
- * Start the orchestrator with cron scheduling
+ * Start cron jobs only (for use when imported by server.js)
+ * This allows the orchestrator to run alongside the web server in a single process
  */
-function startOrchestrator() {
-  console.log('╔════════════════════════════════════════════╗');
-  console.log('║   Detroit Sports Pipeline Orchestrator     ║');
-  console.log('║                                            ║');
-  console.log('║   Cron Jobs:                               ║');
-  console.log('║   - Daily check: 6:00 AM                   ║');
-  console.log('║   - Weekly refresh: Sunday 12:00 AM        ║');
-  console.log('╚════════════════════════════════════════════╝');
-  console.log('');
-  console.log('Started at:', new Date().toISOString());
-  console.log('');
+export function startCronJobs() {
+  console.log('[Orchestrator] Starting cron jobs...');
 
   // Daily job at 6:00 AM
   cron.schedule('0 6 * * *', async () => {
@@ -98,12 +90,31 @@ function startOrchestrator() {
     timezone: 'America/Detroit'
   });
 
-  console.log('Cron jobs scheduled. Orchestrator running...');
-  console.log('Press Ctrl+C to stop.\n');
+  console.log('[Orchestrator] Cron jobs scheduled (daily 6AM, weekly Sunday 12AM)');
 
   // Run initial daily check
-  console.log('Running initial daily check...\n');
+  console.log('[Orchestrator] Running initial daily check...');
   runDailyCheck();
+}
+
+/**
+ * Start the orchestrator with cron scheduling (standalone mode)
+ */
+function startOrchestrator() {
+  console.log('╔════════════════════════════════════════════╗');
+  console.log('║   Detroit Sports Pipeline Orchestrator     ║');
+  console.log('║                                            ║');
+  console.log('║   Cron Jobs:                               ║');
+  console.log('║   - Daily check: 6:00 AM                   ║');
+  console.log('║   - Weekly refresh: Sunday 12:00 AM        ║');
+  console.log('╚════════════════════════════════════════════╝');
+  console.log('');
+  console.log('Started at:', new Date().toISOString());
+  console.log('');
+
+  startCronJobs();
+
+  console.log('Press Ctrl+C to stop.\n');
 }
 
 /**
@@ -181,5 +192,7 @@ process.on('SIGINT', () => {
   process.exit(0);
 });
 
-// Run
-main().catch(console.error);
+// Only run main() if this file is executed directly (not imported)
+if (process.argv[1] && process.argv[1].includes('orchestrator.js')) {
+  main().catch(console.error);
+}

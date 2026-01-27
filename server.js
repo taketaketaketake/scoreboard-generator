@@ -11,6 +11,7 @@ import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 import { getUpcomingGames, getTodaysGames } from './agents/schedule.js';
 import { getOdds } from './agents/odds.js';
+import { startCronJobs } from './orchestrator.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express();
@@ -75,4 +76,7 @@ app.get('/api/health', (req, res) => {
 
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
+
+  // Start the orchestrator cron jobs
+  startCronJobs();
 });
