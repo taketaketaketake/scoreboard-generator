@@ -115,7 +115,7 @@
 
     <!-- Footer -->
     <footer class="text-center mt-8 text-gray-500 text-sm">
-      Auto-refreshes every 30 seconds
+      Auto-refreshes every 5 minutes
     </footer>
   </div>
 
@@ -280,8 +280,8 @@
     // Initial load
     refresh();
 
-    // Auto-refresh every 30 seconds
-    setInterval(refresh, 30000);
+    // Auto-refresh every 5 minutes
+    setInterval(refresh, 5 * 60 * 1000);
   </script>
 </body>
 </html>
