@@ -5,6 +5,7 @@
 
 import { getTodaysGames, getUpcomingGames, fetchAllSchedules } from '../agents/schedule.js';
 import { fetchOpeningOddsForGames } from '../agents/odds.js';
+import { jobStarted, jobCompleted, jobFailed, jobScheduled } from '../agents/logger.js';
 
 /**
  * Main daily job function
@@ -13,6 +14,9 @@ import { fetchOpeningOddsForGames } from '../agents/odds.js';
  * @returns {object} - Summary of scheduled jobs
  */
 export async function runDailyJob(schedulePregame, schedulePostgame) {
+  const startTime = Date.now();
+  jobStarted('daily');
+
   console.log('\n========================================');
   console.log('Daily Job Started:', new Date().toISOString());
   console.log('========================================\n');
@@ -22,6 +26,7 @@ export async function runDailyJob(schedulePregame, schedulePostgame) {
 
   if (todaysGames.length === 0) {
     console.log('No Detroit games today.');
+    jobCompleted('daily', null, { gamesFound: 0 }, startTime);
     return { gamesFound: 0, scheduled: [] };
   }
 
@@ -48,6 +53,7 @@ export async function runDailyJob(schedulePregame, schedulePostgame) {
       console.log(`  → Scheduling pregame job for ${pregameTime.toLocaleTimeString()}`);
       if (schedulePregame) {
         schedulePregame(game, pregameTime);
+        jobScheduled('pregame', game, pregameTime);
       }
     } else {
       console.log(`  → Pregame time already passed`);
@@ -58,12 +64,14 @@ export async function runDailyJob(schedulePregame, schedulePostgame) {
       console.log(`  → Scheduling postgame job for ${postgameTime.toLocaleTimeString()}`);
       if (schedulePostgame) {
         schedulePostgame(game, postgameTime);
+        jobScheduled('postgame', game, postgameTime);
       }
     } else {
       console.log(`  → Postgame polling time already passed, checking now...`);
       // If game should be done, schedule immediate check
       if (schedulePostgame) {
         schedulePostgame(game, new Date());
+        jobScheduled('postgame', game, new Date());
       }
     }
 
@@ -77,6 +85,8 @@ export async function runDailyJob(schedulePregame, schedulePostgame) {
   }
 
   console.log('Daily Job Complete\n');
+
+  jobCompleted('daily', null, { gamesFound: todaysGames.length, scheduledCount: scheduled.length }, startTime);
 
   return {
     gamesFound: todaysGames.length,

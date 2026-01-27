@@ -11,7 +11,8 @@ import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 import { getUpcomingGames, getTodaysGames } from './agents/schedule.js';
 import { getOdds } from './agents/odds.js';
-import { startCronJobs } from './orchestrator.js';
+import { startCronJobs, getScheduledJobs } from './orchestrator.js';
+import { readEvents, readRecentEvents, getStats, listEventDates } from './agents/logger.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express();
@@ -67,6 +68,38 @@ app.get('/api/odds/:eventId', (req, res) => {
   }
   const odds = getOdds(eventId);
   res.json(odds || { message: 'No odds available' });
+});
+
+// API: Get events (for observability dashboard)
+app.get('/api/events', (req, res) => {
+  const date = req.query.date;
+  const days = Math.min(Math.max(parseInt(req.query.days) || 1, 1), 7);
+
+  if (date) {
+    // Validate date format
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) {
+      return res.status(400).json({ error: 'Invalid date format. Use YYYY-MM-DD' });
+    }
+    res.json(readEvents(date));
+  } else {
+    res.json(readRecentEvents(days));
+  }
+});
+
+// API: Get event statistics
+app.get('/api/events/stats', (req, res) => {
+  const days = Math.min(Math.max(parseInt(req.query.days) || 1, 1), 30);
+  res.json(getStats(days));
+});
+
+// API: List available event dates
+app.get('/api/events/dates', (req, res) => {
+  res.json(listEventDates());
+});
+
+// API: Get scheduled jobs
+app.get('/api/scheduled', (req, res) => {
+  res.json(getScheduledJobs());
 });
 
 // Health check

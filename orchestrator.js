@@ -13,13 +13,17 @@ import { runPostgameJob } from './jobs/postgame.js';
 // Store scheduled timeouts so we can track them
 const scheduledJobs = new Map();
 
+// Store job metadata for dashboard
+const scheduledJobsMetadata = new Map();
+
 /**
  * Schedule a job to run at a specific time
  * @param {string} name - Job name for logging
  * @param {Date} time - When to run
  * @param {function} fn - Function to execute
+ * @param {object} metadata - Additional metadata for dashboard
  */
-function scheduleAt(name, time, fn) {
+function scheduleAt(name, time, fn, metadata = {}) {
   const now = new Date();
   const delay = time.getTime() - now.getTime();
 
@@ -34,10 +38,16 @@ function scheduleAt(name, time, fn) {
   const timeout = setTimeout(() => {
     console.log(`[Scheduler] ${name} - Executing now`);
     scheduledJobs.delete(name);
+    scheduledJobsMetadata.delete(name);
     fn();
   }, delay);
 
   scheduledJobs.set(name, timeout);
+  scheduledJobsMetadata.set(name, {
+    name,
+    scheduledFor: time.toISOString(),
+    ...metadata
+  });
 }
 
 /**
@@ -47,7 +57,12 @@ function scheduleAt(name, time, fn) {
  */
 function schedulePregame(game, time) {
   const jobName = `pregame-${game.eventId}`;
-  scheduleAt(jobName, time, () => runPregameJob(game));
+  scheduleAt(jobName, time, () => runPregameJob(game), {
+    jobType: 'pregame',
+    eventId: game.eventId,
+    team: game.team?.name,
+    opponent: game.opponent
+  });
 }
 
 /**
@@ -57,7 +72,12 @@ function schedulePregame(game, time) {
  */
 function schedulePostgame(game, time) {
   const jobName = `postgame-${game.eventId}`;
-  scheduleAt(jobName, time, () => runPostgameJob(game));
+  scheduleAt(jobName, time, () => runPostgameJob(game), {
+    jobType: 'postgame',
+    eventId: game.eventId,
+    team: game.team?.name,
+    opponent: game.opponent
+  });
 }
 
 /**
@@ -65,6 +85,14 @@ function schedulePostgame(game, time) {
  */
 async function runDailyCheck() {
   await runDailyJob(schedulePregame, schedulePostgame);
+}
+
+/**
+ * Get list of scheduled jobs for dashboard
+ * @returns {Array} - Array of scheduled job metadata
+ */
+export function getScheduledJobs() {
+  return Array.from(scheduledJobsMetadata.values());
 }
 
 /**

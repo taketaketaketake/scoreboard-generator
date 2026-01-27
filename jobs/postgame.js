@@ -14,6 +14,7 @@ import { uploadScoreboardVerified, validateR2Config } from '../agents/r2.js';
 import { writeFileSync, mkdirSync } from 'fs';
 import { dirname, join, basename } from 'path';
 import { fileURLToPath } from 'url';
+import { jobStarted, jobCompleted, jobFailed, gameFinal, imageGenerated, r2Uploaded, twilioSent } from '../agents/logger.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = join(__dirname, '..', 'data', 'games');
@@ -37,6 +38,9 @@ function storeGameRecord(eventId, data) {
  * @returns {object} - Result summary
  */
 export async function runPostgameJob(game, options = {}) {
+  const startTime = Date.now();
+  jobStarted('postgame', game);
+
   const {
     pollInterval = 5 * 60 * 1000,  // 5 minutes
     maxAttempts = 60               // 5 hours max
@@ -72,6 +76,9 @@ export async function runPostgameJob(game, options = {}) {
     console.log('Normalizing game data...');
     const normalized = normalizeGameData(scoreData, game.team);
 
+    const scoreStr = `${normalized.ourTeam.score}-${normalized.opponent.score}`;
+    gameFinal(game.eventId, scoreStr);
+
     console.log(`Result: ${normalized.ourTeam.name} ${normalized.ourTeam.score} - ${normalized.opponent.name} ${normalized.opponent.score}`);
     console.log(`Outcome: ${normalized.result.isWin ? 'WIN' : normalized.result.isTie ? 'TIE' : 'LOSS'}`);
 
@@ -93,6 +100,7 @@ export async function runPostgameJob(game, options = {}) {
     // Check if we should generate
     if (!decision.generate) {
       console.log('\nDecision: Do not generate image');
+      jobCompleted('postgame', game, { generated: false, reason: 'skipped' }, startTime);
       return {
         success: true,
         generated: false,
@@ -110,6 +118,7 @@ export async function runPostgameJob(game, options = {}) {
     console.log('\nGenerating scoreboard image...');
     const result = await generateScoreboard(payload);
     console.log(`✓ Image generated: ${result.path}`);
+    imageGenerated(game.eventId, result.path);
 
     // Upload to R2 and send via Twilio if configured
     let twilioResult = null;
@@ -122,6 +131,7 @@ export async function runPostgameJob(game, options = {}) {
         console.log('\nUploading scoreboard to R2...');
         const uploadResult = await uploadScoreboardVerified(result.path);
         console.log(`✓ Uploaded and verified: ${uploadResult.publicUrl}`);
+        r2Uploaded(game.eventId, uploadResult.publicUrl);
 
         // Send via Twilio with R2 URL
         const gameDate = new Date(normalized.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
@@ -130,6 +140,7 @@ export async function runPostgameJob(game, options = {}) {
         console.log('\nSending scoreboard via Twilio...');
         twilioResult = await sendScoreboardImage(uploadResult.publicUrl, scoreMessage);
         console.log(`✓ MMS sent to ${twilioResult.to}`);
+        twilioSent(game.eventId, twilioResult.to);
       } catch (error) {
         console.error(`⚠ Failed to upload/send: ${error.message}`);
       }
@@ -149,6 +160,13 @@ export async function runPostgameJob(game, options = {}) {
       generatedAt: new Date().toISOString()
     });
 
+    jobCompleted('postgame', game, {
+      generated: true,
+      score: scoreStr,
+      isWin: decision.isWin,
+      twilioSent: twilioResult?.success || false
+    }, startTime);
+
     return {
       success: true,
       generated: true,
@@ -161,6 +179,7 @@ export async function runPostgameJob(game, options = {}) {
 
   } catch (error) {
     console.error('\nPostgame job failed:', error.message);
+    jobFailed('postgame', game, error, startTime);
     return {
       success: false,
       generated: false,

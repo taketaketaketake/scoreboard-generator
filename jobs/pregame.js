@@ -4,6 +4,7 @@
  */
 
 import { fetchClosingOddsForGame, getOdds } from '../agents/odds.js';
+import { jobStarted, jobCompleted, jobFailed, oddsCaptured } from '../agents/logger.js';
 
 /**
  * Run pregame job for a specific game
@@ -11,6 +12,9 @@ import { fetchClosingOddsForGame, getOdds } from '../agents/odds.js';
  * @returns {object} - Result summary
  */
 export async function runPregameJob(game) {
+  const startTime = Date.now();
+  jobStarted('pregame', game);
+
   console.log('\n========================================');
   console.log('Pregame Job Started:', new Date().toISOString());
   console.log(`Game: ${game.team.name} vs ${game.opponent}`);
@@ -32,6 +36,9 @@ export async function runPregameJob(game) {
       console.log(`  Provider: ${odds.closing.provider || 'Unknown'}`);
       console.log(`  Captured at: ${odds.closing.capturedAt}`);
 
+      oddsCaptured(game.eventId, odds.closing.spread, odds.closing.overUnder);
+      jobCompleted('pregame', game, { oddsFound: true }, startTime);
+
       return {
         success: true,
         eventId: game.eventId,
@@ -39,6 +46,7 @@ export async function runPregameJob(game) {
       };
     } else {
       console.log('No closing odds available for this game');
+      jobCompleted('pregame', game, { oddsFound: false }, startTime);
       return {
         success: false,
         eventId: game.eventId,
@@ -47,6 +55,7 @@ export async function runPregameJob(game) {
     }
   } catch (error) {
     console.error('Pregame job failed:', error.message);
+    jobFailed('pregame', game, error, startTime);
     return {
       success: false,
       eventId: game.eventId,
