@@ -172,27 +172,3 @@ ESPN Public API documentation: https://github.com/pseudo-r/Public-ESPN-API
 
 This project uses ESPN's undocumented public API for schedules, scores, and odds.
 
-## Social News Pipeline (TAKEDETROIT cards)
-
-Daily at 8 AM ET the orchestrator picks the best Detroit news (Detroit SMB Map API,
-falling back to Google News RSS), renders branded cards (feed 1080x1350 + story
-1080x1920), uploads to R2, and texts them with captions via Twilio MMS.
-
-```bash
-npm run social              # dry run: pick + render locally, no MMS
-npm run social -- --send    # full run with MMS delivery
-```
-
-HTTP endpoints (also available on the deployed server):
-
-```bash
-# Render a single card → PNG
-curl -X POST /api/render -H "Content-Type: application/json" \
-  -d '{"headline":"...","accentPhrase":"...","badge1":"OPENINGS","photo":"https://...","size":"feed"}'
-
-# Trigger the daily job
-curl -X POST /api/social/run -d '{"count":3,"send":false}'
-```
-
-Extra env vars: `GEMINI_API_KEY` (captions + accent phrases; falls back to templates),
-`MAP_API_URL` (defaults to the production Detroit SMB Map API).

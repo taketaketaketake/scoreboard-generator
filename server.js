@@ -102,39 +102,6 @@ app.get('/api/scheduled', (req, res) => {
   res.json(getScheduledJobs());
 });
 
-// API: Render a TAKEDETROIT news card → PNG
-// Body: { headline, accentPhrase?, subtext?, source?, badge1?, badge2?,
-//         badgeColor?, photo?, youtube?, size? ("feed"|"story"|"square") }
-app.post('/api/render', express.json({ limit: '1mb' }), async (req, res) => {
-  try {
-    const { generateNewsCard } = await import('./src/generateNewsCard.js');
-    const buf = await generateNewsCard(req.body || {});
-    res.set('Content-Type', 'image/png');
-    res.send(buf);
-  } catch (err) {
-    res.status(400).json({ error: err.message });
-  }
-});
-
-// API: Trigger the daily social job manually
-// Body (optional): { count?, send? }
-app.post('/api/social/run', express.json(), async (req, res) => {
-  try {
-    const { runSocialJob } = await import('./jobs/social.js');
-    const { count, send } = req.body || {};
-    const result = await runSocialJob({ count, send });
-    res.json({
-      picked: result.picks.map((p) => ({ title: p.title, badge: p.badge1, source: p.source, caption: p.caption })),
-      cards: result.cards.map((c) => ({
-        feed: c.files.feed.url || c.files.feed.path,
-        story: c.files.story.url || c.files.story.path,
-      })),
-    });
-  } catch (err) {
-    res.status(500).json({ error: err.message });
-  }
-});
-
 // Health check
 app.get('/api/health', (req, res) => {
   res.json({ status: 'ok', timestamp: new Date().toISOString() });

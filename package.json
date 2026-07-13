@@ -13,8 +13,7 @@
     "start": "node server.js",
     "orchestrator": "node orchestrator.js",
     "fetch:schedules": "node -e \"import('./agents/schedule.js').then(m => m.fetchAllSchedules())\"",
-    "check:today": "node -e \"import('./jobs/daily.js').then(m => m.runDailyJob())\"",
-    "social": "node -e \"import('./jobs/social.js').then(m => m.runSocialJob({send: process.argv.includes('--send')}))\""
+    "check:today": "node -e \"import('./jobs/daily.js').then(m => m.runDailyJob())\""
   },
   "keywords": [
     "scoreboard",
@@ -30,7 +29,6 @@
     "dotenv": "^17.2.3",
     "express": "^4.18.2",
     "express-rate-limit": "^8.2.1",
-    "fast-xml-parser": "^5.10.0",
     "form-data": "^4.0.5",
     "helmet": "^8.1.0",
     "node-cron": "^3.0.3",

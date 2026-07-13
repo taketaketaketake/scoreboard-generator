@@ -118,20 +118,7 @@ export function startCronJobs() {
     timezone: 'America/Detroit'
   });
 
-  // Daily social news cards at 8:00 AM
-  cron.schedule('0 8 * * *', async () => {
-    console.log('\n[Cron] Running daily social job...');
-    try {
-      const { runSocialJob } = await import('./jobs/social.js');
-      await runSocialJob();
-    } catch (err) {
-      console.error('[Cron] Social job failed:', err.message);
-    }
-  }, {
-    timezone: 'America/Detroit'
-  });
-
-  console.log('[Orchestrator] Cron jobs scheduled (daily 6AM, social 8AM, weekly Sunday 12AM)');
+  console.log('[Orchestrator] Cron jobs scheduled (daily 6AM, weekly Sunday 12AM)');
 
   // Run initial daily check
   console.log('[Orchestrator] Running initial daily check...');
